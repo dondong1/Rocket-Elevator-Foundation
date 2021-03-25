@@ -26,6 +26,7 @@ class InterventionsController < ApplicationController
   # POST /interventions
   # POST /interventions.json
   def create
+   
     @intervention = Intervention.new(intervention_params)
 
     # Get format name of employee connected
@@ -47,14 +48,19 @@ class InterventionsController < ApplicationController
       @intervention.battery_id = nil
     end
 
-    # respond_to do |format|
-    if @intervention.save
-      redirect_to '/interventions/new', notice: 'Intervention was successfully created.' 
-      format.json { render :show, status: :created, location: @intervention }
+    if @intervention.save!
+      helpers.ticket_intervention(@intervention, employee, battery_id, column_id, elevator_id)
+      
 
-        # Call method for create a zendesk ticket
-        helpers.ticket_intervention(@intervention, employee, battery_id, column_id, elevator_id)
-      else
+      respond_to do |format|
+    
+        format.html { render :show, status: :created, location: @intervention }
+        # format.json { render json: @intervention, status: :created }
+
+      end
+      # redirect_to '/interventions/new', notice: 'Intervention was successfully created.' 
+    else
+      respond_to do |format|
         format.html { render :new }
         format.json { render json: @intervention.errors, status: :unprocessable_entity }
       end
