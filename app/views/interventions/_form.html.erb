@@ -1,0 +1,198 @@
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5G004KF4QL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5G004KF4QL');
+</script>      
+       
+     <body>  
+       			<!-- STEPS -->			
+          <h1>   </h1>
+          <br>
+          <h2>   </h2>
+          <br>
+				
+
+
+      
+           
+            </br>
+            <h2 class="text-center">Request an Intervention</h2>
+            </br>
+            <h4>
+            <%= form_for @intervention do |f| %>
+            <div class="row">
+                <div class="col-md-4 text-center selcust">
+                    <label for="sel_customer">Customer*</label>
+                    <select id="sel_customer" class="form-control pointer" name="sel_customer" required>
+                    </select>
+                </div>
+                <div class="col-md-2 text-center selbuild selform">
+                    <label for="sel_building">Building*</label>
+                    <select id="sel_building" class="form-control pointer" name="sel_building" required>
+                    </select>
+                </div>
+                <div class="col-md-2 text-center selbatt selform">
+                    <label for="sel_battery">Battery*</label>
+                    <select id="sel_battery" class="form-control pointer" name="sel_battery" required>
+                    </select>
+                </div>
+                <div class="col-md-2 text-center selcol selform">
+                    <label for="sel_column">Column*</label>
+                    <select id="sel_column" class="form-control pointer" name="sel_column">
+                    <option value="">None</option>
+                    </select>
+                </div>
+                <div class="col-md-2 text-center selelev selform">
+                    <label for="sel_elevator">Elevator*</label>
+                    <select id="sel_elevator" class="form-control pointer" name="sel_elevator">
+                    <option value="">None</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4 text-center selemp">
+                    <label for="sel_employee">Assign to:</label>
+                    <select id="sel_employee" class="form-control pointer" name="sel_employee">
+                        <option value="">None</option>
+                    </select>
+                </div>
+
+                <div class="col-md-8 text-center seldesc">
+                    <label for="sel_description">Description</label>
+                    <input type="text" placeholder="Description here" id="sel_description" class="form-control pointer" name="sel_description">
+                </div>
+                <br \>
+                <br \>
+            </div>
+            </h4>
+            	
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-danger btn-lg btn-red btn-block">Send</button>
+                </div>      
+            </div>
+          
+        <script>
+
+        // Creating a Dropdown list for the Customers (Required Field) 
+        function customer_Dropdown() {
+            $("#sel_customer").append("<option disabled selected>--Required--</option>")
+            <% Customer.all.each do |customer| %>
+                $("#sel_customer").append("<option value='<%=customer.id%>'><%=customer.company_name%></option>")
+            <% end %>
+        };
+
+        // Creating a Dropdown list for the Employees 
+        function employee_Dropdown() {
+            $("#sel_employee").append("<option value='' selected>None</option>")
+            <% Employee.all.each do |employee| %>
+                $("#sel_employee").append("<option value='<%=employee.id%>'><%=employee.first_name%> <%=employee.last_name%></option>")
+            <% end %>
+        };
+
+        // Creating a Dropdown list for the Buildings (Required Field)
+        function buildingDropdown() {
+            $("#sel_building").append("<option disabled selected>--Required--</option>")
+            <% Building.all.each do |building| %>
+            if ($('#sel_customer').val() == <%=building.customer_id%>){
+                $("#sel_building").append("<option value='<%=building.id%>'><%=building.id%></option>")
+            }
+            <% end %>
+        };
+
+        // Creating a Dropdown list for the Batteries (Required Field)
+        function batteryDropdown() {
+            $("#sel_battery").append("<option disabled selected>--Required--</option>")
+            <% Battery.all.each do |battery| %>
+            if ($('#sel_building').val() == <%=battery.building_id%>){
+                $("#sel_battery").append("<option value='<%=battery.id%>'>Battery #<%=battery.id%></option>")
+            }
+            <% end %>
+        };
+
+        // Creating a Dropdown list for the Columns (Required Field)
+        function columnDropdown() {
+            $("#sel_column").append("<option value='' selected>None</option>")
+            <% Column.all.each do |column| %>
+            if ($('#sel_battery').val() == <%=column.battery_id%>){
+                $("#sel_column").append("<option value='<%=column.id%>'>Column #<%=column.id%></option>")
+            }
+            <% end %>
+        };
+
+        // Creating a Dropdown list for the Elevators (Required Field) 
+        function elevatorDropdown() {
+            $("#sel_elevator").append("<option value='' selected>None</option>")
+            <% Elevator.all.each do |elevator| %>
+            if ($('#sel_column').val() == <%=elevator.column_id%>){
+                $("#sel_elevator").append("<option value='<%=elevator.id%>'>Elevator  #<%=elevator.id%></option>")
+            }
+            <% end %>
+        };
+
+        // functions to remove pre-populated fields
+
+        function autoRemove(opt) {
+            $(opt).find('option').remove()
+        };
+
+        function autoRemoveAll() {
+            $('#intervention').find('option').remove()
+
+        };
+        function clearText() {
+                $('#sel_description').val("")
+            }
+
+        // Invoking the functions to restart the fields after reloading the page.
+        autoRemoveAll()
+        clearText()
+        customer_Dropdown()
+        employee_Dropdown()
+
+        $(".selform").hide()
+
+        // Event listeners that manipulate the select fields
+        $('#sel_customer').change(function(){
+            autoRemove('#sel_building')
+            autoRemove('#sel_battery')
+            autoRemove('#sel_column')
+            autoRemove('#sel_elevator')
+            $(".selform").hide()
+            $(".selbuild").show()
+            buildingDropdown()
+        });
+
+        $('#sel_building').change(function(){
+            autoRemove('#sel_battery')
+            autoRemove('#sel_column')
+            autoRemove('#sel_elevator')
+            $(".selcol").hide()
+            $(".selelev").hide()
+            $(".selbatt").show()
+            batteryDropdown()
+        });
+
+        $('#sel_battery').change(function(){
+            autoRemove('#sel_column')
+            autoRemove('#sel_elevator')
+            $(".selelev").hide()
+            $(".selcol").show()
+            columnDropdown()
+        });
+
+        $('#sel_column').change(function(){
+            autoRemove('#sel_elevator')
+            $(".selelev").show()
+            elevatorDropdown()
+        });
+
+        </script>
+
+    </body>
+   

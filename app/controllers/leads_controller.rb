@@ -45,7 +45,7 @@ class LeadsController < ApplicationController
         #full_name = :full_name_of_contact 
         #project_name = :project_name
 
-        from = Email.new(email: 'jaytdot2k@gmail.com')
+        from = Email.new(email: 'don_nguyen2001@yahoo.com')
         to = Email.new(email: @lead.email)
         subject = 'Sending with SendGrid is Fun'
         content = Content.new(type: 'text/html', value: 'and easy to do anywhere, even with Ruby')
@@ -61,7 +61,7 @@ class LeadsController < ApplicationController
         personalization.add_dynamic_template_data("FullName" => @lead.full_name_of_contact());
         personalization.add_dynamic_template_data("ProjectName"=> @lead.project_name());
         
-        mail.template_id = 'd-ab22bc2be7e44ad9bdbc5531c9b59f21'
+        mail.template_id = 'd-a163471839e5488b9774dcf13150068e'
         mail.add_personalization(personalization)
         
         
@@ -76,7 +76,7 @@ class LeadsController < ApplicationController
         if @lead.save!
             redirect_back fallback_location: root_path, notice: "Your Request was successfully created and sent!"
         end 
-
+    
         #===================================================================================================
         # CREATING THE TICKETS FOR THE ZENDESK API
         #===================================================================================================

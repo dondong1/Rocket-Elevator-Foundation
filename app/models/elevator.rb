@@ -28,5 +28,8 @@ class Elevator < ApplicationRecord
     notifier.ping "The Elevator #{self.id} with Serial Number #{self.serial_number} changed status from #{self.status_was} to #{self.status} at #{current_time}."
     end
   end
+  def e_format_form
+    "#{id} - #{certificate_of_operations}"
+  end
   
 end

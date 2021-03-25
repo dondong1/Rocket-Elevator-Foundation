@@ -11,11 +11,13 @@ class Ability
           can :manage, :all
           can :access, :rails_admin       # only allow admin users to access Rails Admin
           can :manage, :dashboard         # allow access to dashboard
+          can :manage, [Intervention]
     end
     if user.employee_role?
           can :manage, :all
           can :access, :rails_admin       # only allow admin users to access Rails Admin
           can :manage, :dashboard         # allow access to dashboard
+          can :manage, [Intervention]
     end
 
     # Define abilities for the passed in user here. For example:

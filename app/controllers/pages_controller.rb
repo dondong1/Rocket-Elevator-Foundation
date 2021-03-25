@@ -15,4 +15,7 @@ class PagesController < ApplicationController
     def quote
         
     end
+    def intervention
+        
+    end
 end

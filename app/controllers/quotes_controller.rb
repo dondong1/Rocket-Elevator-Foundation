@@ -150,15 +150,15 @@ class QuotesController < ApplicationController
     if @quote.save
       redirect_back fallback_location: root_path, notice: "Your Quote was successfully created and sent!"
     end
-
+  
    #===================================================================================================
    # CREATING THE TICKETS FOR THE ZENDESK API
    #===================================================================================================
 
    client = ZendeskAPI::Client.new do |config|
-              config.url = ENV['ZENDESK_URL']
-              config.username = ENV['ZENDESK_USERNAME']
-              config.token = ENV['ZENDESK_TOKEN']
+            config.url = ENV['ZENDESK_URL']
+            config.username = ENV['ZENDESK_USERNAME']
+            config.token = ENV['ZENDESK_TOKEN']
           end
           ZendeskAPI::Ticket.create!(client, 
               :subject => "#{@quote.company_name}", 
