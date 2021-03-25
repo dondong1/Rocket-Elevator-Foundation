@@ -1,29 +1,13 @@
- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5G004KF4QL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5G004KF4QL');
-</script>      
-       
-     <body>  
-       			<!-- STEPS -->			
-          <h1>   </h1>
-          <br>
-          <h2>   </h2>
-          <br>
-				
-
-
-      
-           
-            </br>
+            <!-- PAGE HEADER -->
+                <section  %>)">
+                    <div class="overlay dark-4"></div>
             <h2 class="text-center">Request an Intervention</h2>
-            </br>
+                </section>
+            <!-- /PAGE HEADER -->
+
+        <%= form_tag intervention do %>
+
             <h4>
-            <%= form_for @intervention do |f| %>
             <div class="row">
                 <div class="col-md-4 text-center selcust">
                     <label for="sel_customer">Customer*</label>
@@ -76,7 +60,8 @@
                     <button type="submit" class="btn btn-danger btn-lg btn-red btn-block">Send</button>
                 </div>      
             </div>
-          
+        <% end %>
+
         <script>
 
         // Creating a Dropdown list for the Customers (Required Field) 
@@ -193,6 +178,3 @@
         });
 
         </script>
-
-    </body>
-   
