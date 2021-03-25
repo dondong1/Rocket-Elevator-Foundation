@@ -19,9 +19,9 @@ class ApplicationController < ActionController::Base
     end
 
     def is_employee?
-        if !current_user || !current_user.superadmin_role?
+        if !current_user || !current_user.employee
             redirect_to '/index', alert: "You need to be a employee"
-        elsif  current_user and (current_user.superadmin_role? or current_user.employee.role?) 
+        elsif  current_user and (current_user.superadmin_role? or current_user.employee) 
         else
             redirect_to '/index', alert: "You need to be a employee"
         end

@@ -43,9 +43,9 @@
                         </li>
                         </li>
                        <li>
-                       <% if current_user and (current_user.superadmin_role? or current_user.employee.role?) %>
+                       <% if current_user and (current_user.superadmin_role? or current_user.employee) %>
                        <li>
-                        <%= link_to "New Intervention", "/interventions/new" %>
+                        <%= link_to "INTERVENTION", "/interventions/new" %>
                         </li>
                        <% end %>
                        </li>
@@ -58,12 +58,12 @@
                                     <li><%= link_to "LOGIN", new_user_session_path %></li>
                                     <li><%= link_to "SIGN UP", new_user_registration_path %></li>
                                 <% elsif current_user.superadmin_role? %>
-                                    <li><%= link_to "New Intervention", "admin/intervention" %></li>
+                                    
                                     <li><%= link_to "BACKOFFICE", rails_admin_path %> </li>
                                     <li><%= link_to "PROFILE", edit_user_registration_path %></li>
                                     <li><%= link_to "LOGOUT", destroy_user_session_path, method: :delete %></li>
-                                <% elsif current_user.employee_role? %>
-                                    <li><%= link_to "New Intervention", "admin/intervention" %></li>
+                                <% elsif current_user.employee %>
+                                    
                                     <li><%= link_to "BACKOFFICE", rails_admin_path %> </li>
                                     <li><%= link_to "PROFILE", edit_user_registration_path %></li>
                                     <li><%= link_to "LOGOUT", destroy_user_session_path, method: :delete %></li>

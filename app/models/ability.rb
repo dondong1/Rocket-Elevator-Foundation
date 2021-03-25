@@ -15,7 +15,7 @@ class Ability
           can :manage, [Intervention]
           
     end
-    if user.employee_role?
+    if user.employee
           can :manage, :all
           can :access, :rails_admin       # only allow admin users to access Rails Admin
           can :manage, :dashboard         # allow access to dashboard

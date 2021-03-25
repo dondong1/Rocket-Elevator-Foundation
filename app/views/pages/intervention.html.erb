@@ -35,7 +35,7 @@
 				</div>
 			</div>	
 			<!-- /STEPS -->	
-        <%= form_tag newIntervention_path, :id=> 'intervention', multipart: true do %>
+        <%= form_tag(Intervention_path, method:"post", class: "container mt-50", remote: false do %>
             <%# Form Title %>
             </br>
             <h2 class="text-center">Request an Intervention</h2>

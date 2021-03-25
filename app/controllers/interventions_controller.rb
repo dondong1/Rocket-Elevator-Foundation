@@ -29,10 +29,10 @@ class InterventionsController < ApplicationController
     @intervention = Intervention.new(intervention_params)
 
     # Get format name of employee connected
-    # employee = current_user.employee.full_name
+    employee = current_user.employee.full_name
 
     # Give the id of the employee connected
-    # @intervention.author_id = current_user.employee.id
+    @intervention.author_id = current_user.employee.id
 
     # Data get for zendesk ticket
     battery_id = @intervention.battery_id
@@ -47,10 +47,10 @@ class InterventionsController < ApplicationController
       @intervention.battery_id = nil
     end
 
-    respond_to do |format|
-      if @intervention.save
-        format.html { redirect_to '/interventions/new', notice: 'Intervention was successfully created.' }
-        format.json { render :show, status: :created, location: @intervention }
+    # respond_to do |format|
+    if @intervention.save
+      redirect_to '/interventions/new', notice: 'Intervention was successfully created.' 
+      format.json { render :show, status: :created, location: @intervention }
 
         # Call method for create a zendesk ticket
         helpers.ticket_intervention(@intervention, employee, battery_id, column_id, elevator_id)
