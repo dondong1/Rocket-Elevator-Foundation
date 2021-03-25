@@ -1,0 +1,139 @@
+# Logfile created on 2021-03-25 10:33:16 -0700 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-03-25 10:33:16 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [73137717] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [73137717] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [73137717] Finished in 1.732 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [97c6bf94] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [97c6bf94] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [97c6bf94] Finished in 0.346 seconds with exit status 0 (successful).
+  INFO [f5fd9ca8] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [f5fd9ca8] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f5fd9ca8] Finished in 0.297 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-d053c8c28b35776f8a90.sh 0.0%
+  INFO Uploading /tmp/git-ssh-d053c8c28b35776f8a90.sh 100.0%
+  INFO [4761b0b0] Running /usr/bin/env chmod 700 /tmp/git-ssh-d053c8c28b35776f8a90.sh as ubuntu@99.79.123.96
+ DEBUG [4761b0b0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-d053c8c28b35776f8a90.sh
+  INFO [4761b0b0] Finished in 0.302 seconds with exit status 0 (successful).
+ DEBUG [41b75b21] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [41b75b21] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [41b75b21] Finished in 0.343 seconds with exit status 1 (failed).
+ DEBUG [8cb93039] Running if test ! -d /home/ubuntu/apps/DonNguyen; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [8cb93039] Command: if test ! -d /home/ubuntu/apps/DonNguyen; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen'" 1>&2; false; fi
+ DEBUG [8cb93039] Finished in 0.297 seconds with exit status 0 (successful).
+  INFO [fb370449] Running /usr/bin/env git clone --mirror https://github.com/dondong1/Rocket-Elevator-Foundation.git /home/ubuntu/apps/DonNguyen/repo as ubuntu@99.79.123.96
+ DEBUG [fb370449] Command: cd /home/ubuntu/apps/DonNguyen && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d053c8c28b35776f8a90.sh" ; /usr/bin/env git clone --mirror https://github.com/dondong1/Rocket-Elevator-Foundation.git /home/ubuntu/apps/DonNguyen/repo )
+ DEBUG [fb370449] 	Cloning into bare repository '/home/ubuntu/apps/DonNguyen/repo'...
+  INFO [fb370449] Finished in 2.473 seconds with exit status 0 (successful).
+ DEBUG [c89e56fc] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [c89e56fc] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [c89e56fc] Finished in 0.310 seconds with exit status 0 (successful).
+  INFO [4b772329] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@99.79.123.96
+ DEBUG [4b772329] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d053c8c28b35776f8a90.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [4b772329] Finished in 0.340 seconds with exit status 0 (successful).
+  INFO [066ae0ac] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [066ae0ac] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d053c8c28b35776f8a90.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [066ae0ac] 	Fetching origin
+  INFO [066ae0ac] Finished in 0.471 seconds with exit status 0 (successful).
+ DEBUG [4ffa5fd1] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [4ffa5fd1] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [4ffa5fd1] Finished in 0.335 seconds with exit status 0 (successful).
+  INFO [08b56d89] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210325173319 as ubuntu@99.79.123.96
+ DEBUG [08b56d89] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d053c8c28b35776f8a90.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210325173319 )
+  INFO [08b56d89] Finished in 0.305 seconds with exit status 0 (successful).
+  INFO [f4663775] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210325173319 as ubuntu@99.79.123.96
+ DEBUG [f4663775] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d053c8c28b35776f8a90.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210325173319 )
+ DEBUG [f4663775] 	fatal: Not a valid object name
+ DEBUG [f4663775] 	tar: This does not look like a tar archive
+ DEBUG [f4663775] 	tar: Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-03-25 11:01:07 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c420d395] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [c420d395] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [c420d395] Finished in 1.738 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [039d6514] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [039d6514] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [039d6514] Finished in 0.351 seconds with exit status 0 (successful).
+  INFO [1f07427b] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [1f07427b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1f07427b] Finished in 0.299 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-37e037f5b46d9305e3db.sh 0.0%
+  INFO Uploading /tmp/git-ssh-37e037f5b46d9305e3db.sh 100.0%
+  INFO [6c47ae54] Running /usr/bin/env chmod 700 /tmp/git-ssh-37e037f5b46d9305e3db.sh as ubuntu@99.79.123.96
+ DEBUG [6c47ae54] Command: /usr/bin/env chmod 700 /tmp/git-ssh-37e037f5b46d9305e3db.sh
+  INFO [6c47ae54] Finished in 0.301 seconds with exit status 0 (successful).
+ DEBUG [3ede7317] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [3ede7317] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [3ede7317] Finished in 0.346 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/DonNguyen/repo
+ DEBUG [dabf33d6] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [dabf33d6] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [dabf33d6] Finished in 0.299 seconds with exit status 0 (successful).
+  INFO [3983664b] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@99.79.123.96
+ DEBUG [3983664b] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-37e037f5b46d9305e3db.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [3983664b] Finished in 0.349 seconds with exit status 0 (successful).
+  INFO [dbc8c953] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [dbc8c953] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-37e037f5b46d9305e3db.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [dbc8c953] 	Fetching origin
+  INFO [dbc8c953] Finished in 0.478 seconds with exit status 0 (successful).
+ DEBUG [8eff3523] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [8eff3523] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [8eff3523] Finished in 0.340 seconds with exit status 0 (successful).
+  INFO [eb27a734] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210325180109 as ubuntu@99.79.123.96
+ DEBUG [eb27a734] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-37e037f5b46d9305e3db.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210325180109 )
+  INFO [eb27a734] Finished in 0.312 seconds with exit status 0 (successful).
+  INFO [c530df16] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210325180109 as ubuntu@99.79.123.96
+ DEBUG [c530df16] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-37e037f5b46d9305e3db.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210325180109 )
+ DEBUG [c530df16] 	fatal: Not a valid object name
+ DEBUG [c530df16] 	tar: This does not look like a tar archive
+tar: Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-03-25 11:04:37 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9eef4a34] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [9eef4a34] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [9eef4a34] Finished in 1.779 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [fb451dcc] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [fb451dcc] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [fb451dcc] Finished in 0.342 seconds with exit status 0 (successful).
+  INFO [8ac0481b] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [8ac0481b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8ac0481b] Finished in 0.298 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-1537ccdb613582ebd958.sh 0.0%
+  INFO Uploading /tmp/git-ssh-1537ccdb613582ebd958.sh 100.0%
+  INFO [57485919] Running /usr/bin/env chmod 700 /tmp/git-ssh-1537ccdb613582ebd958.sh as ubuntu@99.79.123.96
+ DEBUG [57485919] Command: /usr/bin/env chmod 700 /tmp/git-ssh-1537ccdb613582ebd958.sh
+  INFO [57485919] Finished in 0.299 seconds with exit status 0 (successful).
+ DEBUG [9e4fe672] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [9e4fe672] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [9e4fe672] Finished in 0.344 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/DonNguyen/repo
+ DEBUG [115d3715] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [115d3715] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [115d3715] Finished in 0.297 seconds with exit status 0 (successful).
+  INFO [8bd4735c] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@99.79.123.96
+ DEBUG [8bd4735c] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1537ccdb613582ebd958.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [8bd4735c] Finished in 0.360 seconds with exit status 0 (successful).
+  INFO [2777d8a7] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [2777d8a7] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1537ccdb613582ebd958.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [2777d8a7] 	Fetching origin
+  INFO [2777d8a7] Finished in 0.478 seconds with exit status 0 (successful).
+ DEBUG [0eea76cb] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [0eea76cb] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [0eea76cb] Finished in 0.338 seconds with exit status 0 (successful).
+  INFO [108020c7] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210325180440 as ubuntu@99.79.123.96
+ DEBUG [108020c7] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1537ccdb613582ebd958.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210325180440 )
+  INFO [108020c7] Finished in 0.302 seconds with exit status 0 (successful).
+  INFO [90691b54] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210325180440 as ubuntu@99.79.123.96
+ DEBUG [90691b54] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1537ccdb613582ebd958.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210325180440 )
+ DEBUG [90691b54] 	fatal: Not a valid object name
+ DEBUG [90691b54] 	tar: This does not look like a tar archive
+ DEBUG [90691b54] 	tar: Exiting with failure status due to previous errors
