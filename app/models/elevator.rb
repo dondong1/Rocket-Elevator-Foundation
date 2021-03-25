@@ -1,5 +1,6 @@
 class Elevator < ApplicationRecord
   enum elevator_status: [:Active, :Inactive, :Intervention]
+  has_many :interventions
   before_update :slack_notifier
   before_update :twilio_notifier
   belongs_to :column

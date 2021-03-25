@@ -1,38 +1,41 @@
             <!-- PAGE HEADER -->
-                <section  %>)">
+                <section class="section-sm alternate">
                     <div class="overlay dark-4"></div>
+                    <br>
+                    <br>
             <h2 class="text-center">Request an Intervention</h2>
                 </section>
             <!-- /PAGE HEADER -->
 
-        <%= form_tag intervention do %>
 
-            <h4>
+        <%= form_tag @intervention do %>
+
+            
             <div class="row">
                 <div class="col-md-4 text-center selcust">
-                    <label for="sel_customer">Customer*</label>
-                    <select id="sel_customer" class="form-control pointer" name="sel_customer" required>
+                    <label for="customer_id">Customer*</label>
+                    <select id="customer_id" class="form-control pointer" name="customer_id" required>
                     </select>
                 </div>
                 <div class="col-md-2 text-center selbuild selform">
-                    <label for="sel_building">Building*</label>
-                    <select id="sel_building" class="form-control pointer" name="sel_building" required>
+                    <label for="building_id">Building*</label>
+                    <select id="building_id" class="form-control pointer" name="building_id" required>
                     </select>
                 </div>
                 <div class="col-md-2 text-center selbatt selform">
-                    <label for="sel_battery">Battery*</label>
-                    <select id="sel_battery" class="form-control pointer" name="sel_battery" required>
+                    <label for="battery_id">Battery*</label>
+                    <select id="battery_id" class="form-control pointer" name="battery_id" required>
                     </select>
                 </div>
                 <div class="col-md-2 text-center selcol selform">
-                    <label for="sel_column">Column*</label>
-                    <select id="sel_column" class="form-control pointer" name="sel_column">
+                    <label for="column_id">Column*</label>
+                    <select id="column_id" class="form-control pointer" name="column_id">
                     <option value="">None</option>
                     </select>
                 </div>
                 <div class="col-md-2 text-center selelev selform">
-                    <label for="sel_elevator">Elevator*</label>
-                    <select id="sel_elevator" class="form-control pointer" name="sel_elevator">
+                    <label for="elevator_id">Elevator*</label>
+                    <select id="elevator_id" class="form-control pointer" name="elevator_id">
                     <option value="">None</option>
                     </select>
                 </div>
@@ -40,15 +43,15 @@
             <div class="row">
 
                 <div class="col-md-4 text-center selemp">
-                    <label for="sel_employee">Assign to:</label>
-                    <select id="sel_employee" class="form-control pointer" name="sel_employee">
+                    <label for="employee_id">Assign to:</label>
+                    <select id="employee_id" class="form-control pointer" name="employee_id">
                         <option value="">None</option>
                     </select>
                 </div>
 
                 <div class="col-md-8 text-center seldesc">
-                    <label for="sel_description">Description</label>
-                    <input type="text" placeholder="Description here" id="sel_description" class="form-control pointer" name="sel_description">
+                    <label for="report">Description</label>
+                    <input type="text" placeholder="Description here" id="report" class="form-control pointer" name="report">
                 </div>
                 <br \>
                 <br \>
@@ -66,56 +69,56 @@
 
         // Creating a Dropdown list for the Customers (Required Field) 
         function customer_Dropdown() {
-            $("#sel_customer").append("<option disabled selected>--Required--</option>")
+            $("#customer_id").append("<option disabled selected>--Required--</option>")
             <% Customer.all.each do |customer| %>
-                $("#sel_customer").append("<option value='<%=customer.id%>'><%=customer.company_name%></option>")
+                $("#customer_id").append("<option value='<%=customer.id%>'><%=customer.company_name%></option>")
             <% end %>
         };
 
         // Creating a Dropdown list for the Employees 
         function employee_Dropdown() {
-            $("#sel_employee").append("<option value='' selected>None</option>")
+            $("#employee_id").append("<option value='' selected>None</option>")
             <% Employee.all.each do |employee| %>
-                $("#sel_employee").append("<option value='<%=employee.id%>'><%=employee.first_name%> <%=employee.last_name%></option>")
+                $("#employee_id").append("<option value='<%=employee.id%>'><%=employee.first_name%> <%=employee.last_name%></option>")
             <% end %>
         };
 
         // Creating a Dropdown list for the Buildings (Required Field)
         function buildingDropdown() {
-            $("#sel_building").append("<option disabled selected>--Required--</option>")
+            $("#building_id").append("<option disabled selected>--Required--</option>")
             <% Building.all.each do |building| %>
-            if ($('#sel_customer').val() == <%=building.customer_id%>){
-                $("#sel_building").append("<option value='<%=building.id%>'><%=building.id%></option>")
+            if ($('#customer_id').val() == <%=building.customer_id%>){
+                $("#building_id").append("<option value='<%=building.id%>'><%=building.id%></option>")
             }
             <% end %>
         };
 
         // Creating a Dropdown list for the Batteries (Required Field)
         function batteryDropdown() {
-            $("#sel_battery").append("<option disabled selected>--Required--</option>")
+            $("#battery_id").append("<option disabled selected>--Required--</option>")
             <% Battery.all.each do |battery| %>
-            if ($('#sel_building').val() == <%=battery.building_id%>){
-                $("#sel_battery").append("<option value='<%=battery.id%>'>Battery #<%=battery.id%></option>")
+            if ($('#building_id').val() == <%=battery.building_id%>){
+                $("#battery_id").append("<option value='<%=battery.id%>'>Battery #<%=battery.id%></option>")
             }
             <% end %>
         };
 
         // Creating a Dropdown list for the Columns (Required Field)
         function columnDropdown() {
-            $("#sel_column").append("<option value='' selected>None</option>")
+            $("#column_id").append("<option value='' selected>None</option>")
             <% Column.all.each do |column| %>
-            if ($('#sel_battery').val() == <%=column.battery_id%>){
-                $("#sel_column").append("<option value='<%=column.id%>'>Column #<%=column.id%></option>")
+            if ($('#battery_id').val() == <%=column.battery_id%>){
+                $("#column_id").append("<option value='<%=column.id%>'>Column #<%=column.id%></option>")
             }
             <% end %>
         };
 
         // Creating a Dropdown list for the Elevators (Required Field) 
         function elevatorDropdown() {
-            $("#sel_elevator").append("<option value='' selected>None</option>")
+            $("#elevator_id").append("<option value='' selected>None</option>")
             <% Elevator.all.each do |elevator| %>
-            if ($('#sel_column').val() == <%=elevator.column_id%>){
-                $("#sel_elevator").append("<option value='<%=elevator.id%>'>Elevator  #<%=elevator.id%></option>")
+            if ($('#column_id').val() == <%=elevator.column_id%>){
+                $("#elevator_id").append("<option value='<%=elevator.id%>'>Elevator  #<%=elevator.id%></option>")
             }
             <% end %>
         };
@@ -131,7 +134,7 @@
 
         };
         function clearText() {
-                $('#sel_description').val("")
+                $('#report').val("")
             }
 
         // Invoking the functions to restart the fields after reloading the page.
@@ -143,36 +146,36 @@
         $(".selform").hide()
 
         // Event listeners that manipulate the select fields
-        $('#sel_customer').change(function(){
-            autoRemove('#sel_building')
-            autoRemove('#sel_battery')
-            autoRemove('#sel_column')
-            autoRemove('#sel_elevator')
+        $('#customer_id').change(function(){
+            autoRemove('#building_id')
+            autoRemove('#battery_id')
+            autoRemove('#column_id')
+            autoRemove('#elevator_id')
             $(".selform").hide()
             $(".selbuild").show()
             buildingDropdown()
         });
 
-        $('#sel_building').change(function(){
-            autoRemove('#sel_battery')
-            autoRemove('#sel_column')
-            autoRemove('#sel_elevator')
+        $('#building_id').change(function(){
+            autoRemove('#battery_id')
+            autoRemove('#column_id')
+            autoRemove('#elevator_id')
             $(".selcol").hide()
             $(".selelev").hide()
             $(".selbatt").show()
             batteryDropdown()
         });
 
-        $('#sel_battery').change(function(){
-            autoRemove('#sel_column')
-            autoRemove('#sel_elevator')
+        $('#battery_id').change(function(){
+            autoRemove('#column_id')
+            autoRemove('#elevator_id')
             $(".selelev").hide()
             $(".selcol").show()
             columnDropdown()
         });
 
-        $('#sel_column').change(function(){
-            autoRemove('#sel_elevator')
+        $('#column_id').change(function(){
+            autoRemove('#elevator_id')
             $(".selelev").show()
             elevatorDropdown()
         });

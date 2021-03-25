@@ -5,8 +5,5 @@ class Battery < ApplicationRecord
     has_many :columns
     has_many :interventions
 
-    def full_name
-        "#{id} - #{certificate_of_operations}"
-      
-    end
+
 end
