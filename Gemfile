@@ -84,9 +84,6 @@ gem 'blazer'
 gem 'dropbox_api'
 
 
-
-
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -104,8 +101,7 @@ group :development do
   gem 'capistrano-bundler', '>= 1.1.0'
   gem 'rvm1-capistrano3', require: false
   gem 'capistrano3-puma'
-  gem 'ed25519', '~> 1.2', '>= 1.2.4'
-  gem 'bcrypt_pbkdf', '~> 1.0.0.alpha1'
+
 end
 
 group :test do
