@@ -27,10 +27,11 @@
 # /config/master.key
 
 # Ignore application configuration
-# /config/application.yml
+/config/application.yml
 
 # Ignore database.yml file
-# /config/database.yml
+
+
 
 # sendgrid.env
 
