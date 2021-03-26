@@ -14,7 +14,7 @@ class Elevator < ApplicationRecord
       if self.status_changed?
         @client.api.account.messages.create(
           from: "+17276108703",
-          to: "5145037764", #For demonstration
+          to: "9164725749", #For demonstration
           # to: self.column.battery.building.technical_contact_phone_for_the_building,
           body: "Elevator #{self.id} with Serial Number #{self.serial_number} require maintenance.")
       end
