@@ -5039,3 +5039,410 @@ Install missing gems with `bundle install`
 (mimemagic (~> 0.3.2)).
 Either installing with `--full-index` or running `bundle update marcel` should
 fix the problem.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-03-25 22:00:58 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [361e74ab] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [361e74ab] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [361e74ab] Finished in 1.771 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [af08ffa9] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@99.79.123.96
+ DEBUG [af08ffa9] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [af08ffa9] Finished in 0.383 seconds with exit status 0 (successful).
+  INFO [ca88c0c4] Running /usr/bin/env mkdir -p /tmp as ubuntu@99.79.123.96
+ DEBUG [ca88c0c4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ca88c0c4] Finished in 0.319 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-4cf2dd4892ccc921ddbf.sh 0.0%
+  INFO Uploading /tmp/git-ssh-4cf2dd4892ccc921ddbf.sh 100.0%
+  INFO [9eb06f1c] Running /usr/bin/env chmod 700 /tmp/git-ssh-4cf2dd4892ccc921ddbf.sh as ubuntu@99.79.123.96
+ DEBUG [9eb06f1c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-4cf2dd4892ccc921ddbf.sh
+  INFO [9eb06f1c] Finished in 0.318 seconds with exit status 0 (successful).
+ DEBUG [5f577d52] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@99.79.123.96
+ DEBUG [5f577d52] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [5f577d52] Finished in 0.355 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/DonNguyen/repo
+ DEBUG [d54f9657] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [d54f9657] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [d54f9657] Finished in 0.317 seconds with exit status 0 (successful).
+  INFO [d19803c6] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@99.79.123.96
+ DEBUG [d19803c6] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4cf2dd4892ccc921ddbf.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [d19803c6] Finished in 0.358 seconds with exit status 0 (successful).
+  INFO [283f9292] Running /usr/bin/env git remote update --prune as ubuntu@99.79.123.96
+ DEBUG [283f9292] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4cf2dd4892ccc921ddbf.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [283f9292] 	Fetching origin
+ DEBUG [283f9292] 	From https://github.com/dondong1/Rocket-Elevator-Foundation
+   f57d72f..5a6fea3  main       -> main
+  INFO [283f9292] Finished in 0.579 seconds with exit status 0 (successful).
+ DEBUG [77b695c2] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [77b695c2] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [77b695c2] Finished in 0.363 seconds with exit status 0 (successful).
+  INFO [5c0f1554] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210326050100 as ubuntu@99.79.123.96
+ DEBUG [5c0f1554] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4cf2dd4892ccc921ddbf.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210326050100 )
+  INFO [5c0f1554] Finished in 0.322 seconds with exit status 0 (successful).
+  INFO [f7dfe4eb] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210326050100 as ubuntu@99.79.123.96
+ DEBUG [f7dfe4eb] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4cf2dd4892ccc921ddbf.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210326050100 )
+  INFO [f7dfe4eb] Finished in 0.827 seconds with exit status 0 (successful).
+ DEBUG [3b891e72] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [3b891e72] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [3b891e72] Finished in 0.314 seconds with exit status 0 (successful).
+ DEBUG [234c8558] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@99.79.123.96
+ DEBUG [234c8558] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4cf2dd4892ccc921ddbf.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [234c8558] 	5a6fea354c0dc919ae38538f753c0fdf48b8e874
+ DEBUG [234c8558] Finished in 0.362 seconds with exit status 0 (successful).
+ DEBUG [4b9c85fb] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [4b9c85fb] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi
+ DEBUG [4b9c85fb] Finished in 0.318 seconds with exit status 0 (successful).
+  INFO [4312df77] Running /usr/bin/env echo "5a6fea354c0dc919ae38538f753c0fdf48b8e874" > REVISION as ubuntu@99.79.123.96
+ DEBUG [4312df77] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /usr/bin/env echo "5a6fea354c0dc919ae38538f753c0fdf48b8e874" > REVISION
+  INFO [4312df77] Finished in 0.357 seconds with exit status 0 (successful).
+  INFO [1cd7923d] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210326050100/config as ubuntu@99.79.123.96
+ DEBUG [1cd7923d] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210326050100/config
+  INFO [1cd7923d] Finished in 0.307 seconds with exit status 0 (successful).
+ DEBUG [8236511e] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [8236511e] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/database.yml ]
+ DEBUG [8236511e] Finished in 0.358 seconds with exit status 1 (failed).
+ DEBUG [8a7a3eb7] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [8a7a3eb7] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/database.yml ]
+ DEBUG [8a7a3eb7] Finished in 0.315 seconds with exit status 0 (successful).
+  INFO [29753d1c] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/database.yml as ubuntu@99.79.123.96
+ DEBUG [29753d1c] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/database.yml
+  INFO [29753d1c] Finished in 0.357 seconds with exit status 0 (successful).
+  INFO [bdee596e] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/database.yml as ubuntu@99.79.123.96
+ DEBUG [bdee596e] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/database.yml
+  INFO [bdee596e] Finished in 0.319 seconds with exit status 0 (successful).
+ DEBUG [ce4b50c2] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [ce4b50c2] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/application.yml ]
+ DEBUG [ce4b50c2] Finished in 0.369 seconds with exit status 1 (failed).
+ DEBUG [46134db0] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [46134db0] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/application.yml ]
+ DEBUG [46134db0] Finished in 0.320 seconds with exit status 0 (successful).
+  INFO [6846a3af] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/application.yml as ubuntu@99.79.123.96
+ DEBUG [6846a3af] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/application.yml
+  INFO [6846a3af] Finished in 0.358 seconds with exit status 0 (successful).
+  INFO [d254d656] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/application.yml as ubuntu@99.79.123.96
+ DEBUG [d254d656] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210326050100/config/application.yml
+  INFO [d254d656] Finished in 0.311 seconds with exit status 0 (successful).
+  INFO [2099f9f0] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp /home/ubuntu/apps/DonNguyen/releases/20210326050100 /home/ubuntu/apps/DonNguyen/releases/20210326050100/public as ubuntu@99.79.123.96
+ DEBUG [2099f9f0] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp /home/ubuntu/apps/DonNguyen/releases/20210326050100 /home/ubuntu/apps/DonNguyen/releases/20210326050100/public
+  INFO [2099f9f0] Finished in 0.374 seconds with exit status 0 (successful).
+ DEBUG [7e20fed0] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/pids ] as ubuntu@99.79.123.96
+ DEBUG [7e20fed0] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/pids ]
+ DEBUG [7e20fed0] Finished in 0.351 seconds with exit status 1 (failed).
+ DEBUG [13c774d7] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/pids ] as ubuntu@99.79.123.96
+ DEBUG [13c774d7] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/pids ]
+ DEBUG [13c774d7] Finished in 0.356 seconds with exit status 1 (failed).
+  INFO [40b95f12] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/pids as ubuntu@99.79.123.96
+ DEBUG [40b95f12] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/pids
+  INFO [40b95f12] Finished in 0.318 seconds with exit status 0 (successful).
+ DEBUG [feff673c] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/sockets ] as ubuntu@99.79.123.96
+ DEBUG [feff673c] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/sockets ]
+ DEBUG [feff673c] Finished in 0.360 seconds with exit status 1 (failed).
+ DEBUG [4da923fd] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/sockets ] as ubuntu@99.79.123.96
+ DEBUG [4da923fd] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/sockets ]
+ DEBUG [4da923fd] Finished in 0.325 seconds with exit status 1 (failed).
+  INFO [9546ed30] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/sockets as ubuntu@99.79.123.96
+ DEBUG [9546ed30] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210326050100/tmp/sockets
+  INFO [9546ed30] Finished in 0.398 seconds with exit status 0 (successful).
+ DEBUG [a7a67e54] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/log ] as ubuntu@99.79.123.96
+ DEBUG [a7a67e54] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/log ]
+ DEBUG [a7a67e54] Finished in 0.316 seconds with exit status 1 (failed).
+ DEBUG [dc346a50] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210326050100/log ] as ubuntu@99.79.123.96
+ DEBUG [dc346a50] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210326050100/log ]
+ DEBUG [dc346a50] Finished in 0.355 seconds with exit status 0 (successful).
+  INFO [4d18382f] Running /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210326050100/log as ubuntu@99.79.123.96
+ DEBUG [4d18382f] Command: /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210326050100/log
+  INFO [4d18382f] Finished in 0.324 seconds with exit status 0 (successful).
+  INFO [be9642a8] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210326050100/log as ubuntu@99.79.123.96
+ DEBUG [be9642a8] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210326050100/log
+  INFO [be9642a8] Finished in 0.368 seconds with exit status 0 (successful).
+ DEBUG [58eefa8c] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets ] as ubuntu@99.79.123.96
+ DEBUG [58eefa8c] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets ]
+ DEBUG [58eefa8c] Finished in 0.321 seconds with exit status 1 (failed).
+ DEBUG [6cb890b5] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets ] as ubuntu@99.79.123.96
+ DEBUG [6cb890b5] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets ]
+ DEBUG [6cb890b5] Finished in 0.362 seconds with exit status 1 (failed).
+  INFO [da0a22a5] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets as ubuntu@99.79.123.96
+ DEBUG [da0a22a5] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets
+  INFO [da0a22a5] Finished in 0.316 seconds with exit status 0 (successful).
+ DEBUG [06745db0] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [06745db0] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi
+ DEBUG [06745db0] Finished in 0.361 seconds with exit status 0 (successful).
+  INFO [188dec5d] Running /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install . as ubuntu@99.79.123.96
+ DEBUG [188dec5d] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install .
+ DEBUG [188dec5d] 	Warning, new version of rvm available '1.29.12', you are using older version '1.29.9'.
+You can disable this warning with:   echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable auto-update with:     echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+You can update manually with:        rvm get VERSION                         (e.g. 'rvm get stable')
+
+ DEBUG [188dec5d] 	Already installed ruby-2.6.6.
+To reinstall use:
+
+    rvm reinstall ruby-2.6.6
+
+  INFO [188dec5d] Finished in 0.729 seconds with exit status 0 (successful).
+  INFO [49e7e07b] Running /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD as ubuntu@99.79.123.96
+ DEBUG [49e7e07b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4cf2dd4892ccc921ddbf.sh" ; /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD )
+ DEBUG [49e7e07b] 	5a6fea354c0dc919ae38538f753c0fdf48b8e874	HEAD
+  INFO [49e7e07b] Finished in 0.528 seconds with exit status 0 (successful).
+  INFO [f828c700] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases as ubuntu@99.79.123.96
+ DEBUG [f828c700] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases
+  INFO [f828c700] Finished in 0.324 seconds with exit status 0 (successful).
+  INFO [a8195a71] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets as ubuntu@99.79.123.96
+ DEBUG [a8195a71] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets
+  INFO [a8195a71] Finished in 0.362 seconds with exit status 0 (successful).
+  INFO [924b21ca] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config as ubuntu@99.79.123.96
+ DEBUG [924b21ca] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config
+  INFO [924b21ca] Finished in 0.314 seconds with exit status 0 (successful).
+ DEBUG [7107f771] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ] as ubuntu@99.79.123.96
+ DEBUG [7107f771] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ]
+ DEBUG [7107f771] Finished in 0.366 seconds with exit status 0 (successful).
+ DEBUG [e7124420] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ] as ubuntu@99.79.123.96
+ DEBUG [e7124420] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ]
+ DEBUG [e7124420] Finished in 0.320 seconds with exit status 0 (successful).
+ DEBUG [8989f357] Running [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ] as ubuntu@99.79.123.96
+ DEBUG [8989f357] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ]
+ DEBUG [8989f357] Finished in 0.377 seconds with exit status 0 (successful).
+ DEBUG [7e97bc97] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210326050100/REVISION ] as ubuntu@99.79.123.96
+ DEBUG [7e97bc97] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210326050100/REVISION ]
+ DEBUG [7e97bc97] Finished in 0.318 seconds with exit status 0 (successful).
+ DEBUG [c83ec763] Running /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210326050100/REVISION 2>/dev/null as ubuntu@99.79.123.96
+ DEBUG [c83ec763] Command: /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210326050100/REVISION 2>/dev/null
+ DEBUG [c83ec763] 	5a6fea354c0dc919ae38538f753c0fdf48b8e874
+ DEBUG [c83ec763] Finished in 0.362 seconds with exit status 0 (successful).
+ DEBUG [ba77ecf0] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [ba77ecf0] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi
+ DEBUG [ba77ecf0] Finished in 0.315 seconds with exit status 0 (successful).
+  INFO [d5fbd7f3] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true as ubuntu@99.79.123.96
+ DEBUG [d5fbd7f3] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true
+  INFO [d5fbd7f3] Finished in 1.234 seconds with exit status 0 (successful).
+  INFO [34678706] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle as ubuntu@99.79.123.96
+ DEBUG [34678706] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle
+  INFO [34678706] Finished in 1.210 seconds with exit status 0 (successful).
+  INFO [c9e82dda] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production as ubuntu@99.79.123.96
+ DEBUG [c9e82dda] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production
+  INFO [c9e82dda] Finished in 1.239 seconds with exit status 0 (successful).
+ DEBUG [9aa7bd71] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [9aa7bd71] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi
+ DEBUG [9aa7bd71] Finished in 0.316 seconds with exit status 0 (successful).
+ DEBUG [7894a3e6] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check as ubuntu@99.79.123.96
+ DEBUG [7894a3e6] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check
+ DEBUG [7894a3e6] 	The following gems are missing
+ * mimemagic (0.3.9)
+ * marcel (0.3.3)
+ * activestorage (5.2.4.5)
+ * rails (5.2.4.5)
+ DEBUG [7894a3e6] 	 * rails_admin (2.0.2)
+ * rails_admin_rollincode (1.3)
+Install missing gems with `bundle install`
+ DEBUG [7894a3e6] Finished in 1.345 seconds with exit status 1 (failed).
+  INFO [49687d06] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle install --jobs 4 --quiet as ubuntu@99.79.123.96
+ DEBUG [49687d06] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle install --jobs 4 --quiet
+  INFO [49687d06] Finished in 4.616 seconds with exit status 0 (successful).
+ DEBUG [652f34e9] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [652f34e9] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi
+ DEBUG [652f34e9] Finished in 0.360 seconds with exit status 0 (successful).
+  INFO [7e5ada8e] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile as ubuntu@99.79.123.96
+ DEBUG [7e5ada8e] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && ( export RAILS_ENV="development" RAILS_GROUPS="" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile )
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:43.691978 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/quote-44e5485b77efd1b3cb78d327efb73e49b56b43fda47ad784a50034ef02f650e2.js
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:43.692431 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/quote-44e5485b77efd1b3cb78d327efb73e49b56b43fda47ad784a50034ef02f650e2.js.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:44.266258 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/rails_admin-bcedc17fe6541a81341eac87d85e2992942dfdbfd0b3f2bb0f5967e5244d6925.js
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:44.266415 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/rails_admin-bcedc17fe6541a81341eac87d85e2992942dfdbfd0b3f2bb0f5967e5244d6925.js.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.822661 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/rails_admin-eebcd655d5902d989a74437bcf9d4932be3595750be06e6138877a096aa0f3fe.css
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.822952 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/rails_admin-eebcd655d5902d989a74437bcf9d4932be3595750be06e6138877a096aa0f3fe.css.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.823372 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/aristo/images/bg_fallback-bad53cee26694a42bdba717337e2de9f997ebf3ded300b8c3ff48ac5192c1903.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.824285 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/aristo/images/ui-icons_222222_256x240-310ae73efc6774716f0a80ce2141565fddec51702330a8066fd5e220437ae321.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.824755 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/aristo/images/ui-icons_454545_256x240-d59c6da436d1a19aa35bcbf2d400ad160f2b2568fbbfa2f9ebfc192d14025474.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.825970 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/aristo/images/icon_sprite-34a30806fcba43a2effc9739cb7a370a865199a7d38bfcbc7c2474ef3ff70ded.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.827059 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/aristo/images/slider_handles-4b523f3d1bd18af5fec23ec7d58ed85e4c7e8f4685fe85a8407e2d9017bf6484.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.829092 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/aristo/images/progress_bar-a2ed712d76dcffc7a06918cd389511bca2cf7bb91c12b1d865bf44c7b2c46289.gif
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.830103 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/multiselect/icon_sprite-34a30806fcba43a2effc9739cb7a370a865199a7d38bfcbc7c2474ef3ff70ded.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.830900 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-light-e7daf3169259a9fd6b8177b8e89ff2b964cd3dababd580a46d7fb4eecc07763b.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.831615 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-dark-bb53269e44173a496d2620bad201ca838a57b67c40b3439b5ce89345ef9e888b.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.832202 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-light-e1698d37f37f7db85ce6736810a34b1a229306be8a3f3be156fbaa47dd6cd160.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.832904 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-dark-2bf097798e2b1db766a16ff4f335d3fe94bd51f92dc2ddf47c8a370ba31189c0.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.833600 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/select2-8ddf680d1a86d603653e43f694bbb6dc1010aa81f5c0c9c87181e10e064e503b.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.834185 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_background-52967b595ae718ad95520b9cf2b22551fb8cb0d81a171db869b00d2b604b4976.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.834801 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/colorpicker_overlay-ba21ab85c59167b61af508e34a22ee344c97bb11454d287a47691fa2fb182856.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.835499 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/colorpicker_select-980ae86d6aab751f6f67a1191d78c0fa54b533583456b905ec43b34d5806ee2d.gif
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.836255 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_indic-8ca62ee85015e67671f2312a2fead633740335f65e254d8f4c3ea29b99f62de7.gif
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.837061 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_hex-4b1a7b08312edc3732cf30c7d8d5291abea41c64311c3d05d67a586cbe3dcf37.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.837639 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_rgb_r-54289ccad89df00514d84ba6d16d1a0abc0d61de95dcfc054bf2202e238a7cb6.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.838211 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_rgb_g-8ab4d41c46fc26080b75eecc6f8c25d8f6db5264cf56ecc4993f86d100ebd71f.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.839012 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_rgb_b-22f2da1810cd9da18a1f93418b8f45bd3cb676aa9790ad5e1aba37779fb3ac31.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.839603 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_hsb_h-df01edb80a710cdd9d9057201eaa682a8c86cd80ad6c6929f1d4a9182ad6aed3.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.840290 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_hsb_s-9277f3fd9eb79baef2384f7b38968184fd40d631024149c7b41543b7796c0706.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.840989 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_hsb_b-7160b5fd5c5779102cb91f771b80ef2621dabe10bf06e8359deaefece831b58b.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.841564 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/colorpicker/custom_submit-3a57bad878f6d608b998e36acefe2325d786d4631abeecc5d400ca5c062f5ce5.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.842253 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.842831 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.843271 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.844115 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.845212 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.845873 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.846279 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.846881 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.850583 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:49.855660 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.194930 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/jquery.colorpicker-61e84e7ad7d0df15d0eaca7bea1f80cd900223b4dbfae12becc5899225a3a608.css
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.195088 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/rails_admin/jquery.colorpicker-61e84e7ad7d0df15d0eaca7bea1f80cd900223b4dbfae12becc5899225a3a608.css.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.198588 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/et-line-c87236b5783f4fbe582e2122775a8bec52564850060ae17250d7a4265d8d42a3.ttf
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.198954 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/et-line-c87236b5783f4fbe582e2122775a8bec52564850060ae17250d7a4265d8d42a3.ttf.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.201225 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/et-line-19d2f43d546ada73dd083f7778aa4a5cac1a8e7a3af56efccae580fce07a5e1c.woff
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.203729 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.205761 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.206071 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.208039 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/revicons-f7b9c3065e55fa3b9e320093612e7b30dcb14355a44ec461247b495a3e729686.woff
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.210325 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/33-min-c80e2e33faa0103f19975785b5fd5340e359d14ee82dd094edcaf50f99db084c.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.212212 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/34-min-dd6636c9c6f9220b27f75d6511afb74ee8d1e0088d36851b38cd649cee0a2c14.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.215086 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/AdobeStock_112233448-761bf244affd38950d2a904d5854d8c9b50b41bc826c1b8200884cf05c08d2a6.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.217296 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/AdobeStock_146216308-243af9b80d865642878067a7387a2419cd5ad8d7d9061ae30fd913bbafcf3acb.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.236050 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/AdobeStock_162479912-625d3b461e101d232a1bd9b066df24f44a03907c85dddcf946b5dae2b14a0ae2.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.239049 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/AdobeStock_170843598-28bff19bacc9a33bafc053734ea772c5e0bbdb5ce5087f0dac2a0b044e9eea1d.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.241563 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/AdobeStock_445566995-0d25906335064889229cf8633e3c85b04eb74a420c02b0e1aa6ce10f1b26f1d1.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.244635 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/AdobeStock_669955441-531a8af52edbe125b7f1f2d03cbe75f0277c9b49429a6d822ddfed66606dddc7.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.246862 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/AdobeStock_72034307-d4f0bb9f9a2b537416ee8a1a420fef33cba4bb95a7827bd98260bada561acc62.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.249979 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Awards/AdobeStock_123456789-1fe21f85bb5ad59a6359acd1357abded74ea1b28243022f8bba25d566c26e303.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.252086 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Awards/award1-79716e0018ea8fba2f8d77b8f17eca1e830614704ee4a087755df049da427d0c.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.254725 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Awards/award2-6bd7e2af2b2cc752a84c0c8f9751cbffd7471cdf95ae36419653665b379bd059.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.257144 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Awards/award3-52c8757eff2902e0befc3b8ef700e1275693aebda7ad168eed071e63ce70244b.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.259242 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Awards/award4-2aaaa1f4e6560846ae9607dd59f66261a1a6a866c44901566fa2d8dd5a0d0e12.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.261678 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Commercial_Page/AdobeStock_112233445-e9f91683783fa1564b50f350fda2222092c19723ec846a78ace5ef72e3c536c8.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.263846 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Commercial_Page/AdobeStock_665544228-be2441f734ebe67c441a4707ead61f5fa4de853f85ed812637c9e7c4afe74792.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.266236 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Commercial_Page/AdobeStock_885566447-e8f63616f64183a3aa39e0694bee7d391c59f5b7132e11ab3988d0deb4e233a7.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.269126 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Commercial_Page/AdobeStock_987654321-b5fe72927743ede49d63f6c53015c1fcc5a6e913d5d19b6854e0bc493f827e0b.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.271519 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Corporate/Corporate1-62b9f9c465e61a9d1435916bce9583b37e19422e3ac24a49a52974073f9013fb.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.273908 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Corporate/Corporate2-9b88fedc1fc78a9c1403193ee9d1dd643c38c59789b709b66ec8433046f2d9c1.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.276686 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Corporate/Corporate3-f75ee1971b318bdb4921e4d0701cabfe1922512644ee148a3a5955611f07c1aa.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.279034 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Corporate/Corporate4-5f843384f12f5c569993bdaa8b8c1f4ae9b1ec4c90b8ee33bd763fdfa7ace7aa.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.281022 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer1-cb53f67a20b9de843b809715155481e5e3ffc4ecb088c5cab2a4b694209efbd3.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.282991 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer10-255a57fe3adeea97cca82afa2bf904a43792e91f7872a1ac2db5e7ad050c6aed.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.285076 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer11-bb333cd77bcbab7a4f67742bbd8ab41038daaa4d0c9b59c3b4efa6c73d2b9aac.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.286852 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer12-a30d8fa948ffa94ba40928eb7be418c47d5cbf349b6894f24e5fe3d7fe4bde81.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.288908 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer2-7481a9a448771bc153b99b6dadce05862228a628c84368c1543f767e82d5f43c.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.291145 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer3-296777822573934d188dc03e93843bdd566af511b288a12508ebe3d0b41ad0c0.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.293233 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer4-de3c0494323023449391d2adc2faaf65e37624941d95fb69c6d6ee718d422096.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.295263 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer5-423452dad0608c22d535e8823b75cca6be4da20e1358eb71005178adf59fe7f3.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.297251 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer6-bda13c01d6af6eefcfc2f9e9f322d702d4e4388ed4facf33a1ec9b724964c644.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.299578 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer7-ddbaa125fcec180e9155ebec87765367067aa620c2eae7529af0ba9196694eb4.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.301775 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer8-6188b24308a227d9d4bf724c585e5acbb3f06a45414b426140283bec9ccf58ba.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.304069 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Customer/customer9-8bf1af437da9caecc7e7245777aaacf5e9a640be70e8a80c2ae325f18025aa72.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.306628 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/M-82cfc8cefc82473098b645d0abfa83c6479197f4f6e77903c0f000700cfc6deb.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.308996 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/News/News1-94d8390f8ee1361ef40f50fdc7a3ac4efb599818aa812f6788d50c322bb8290e.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.311382 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/News/News2-848d01d7928fc36981a468657067ae83f3819dbe23c9764938dce8eef30cd537.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.313785 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/News/News3-5365f586ae63d63aecbfb535f6c24a72448a587b090c2a38c6cde8dd5b98d8bb.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.316359 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/News/News4-97e5a0e1fdd3b65b8c56606cfc2f2c0509c6ab60d22444f0355c4e49601203b4.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.318506 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/News/News5-74ab312980de54e43083f0f68d80361e656b2cbebc5e08e1fbe673e65d79453a.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.320885 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/News/News6-141f6b8b56276a590eea36101dd780e233462341086cb4a87f085f11ee902e52.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.323295 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/People/CEO-cbdea61d1fe82220f3a5ce6aeff2ee60c4a63a8016c2e3984b353f84661771fa.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.325448 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-Abdul-79f19e5930fa83f2aa74af73b20b54cbe0434ef79a8786db5cebe85aea717411.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.327972 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-Ahsan-eacc1e00f20125a3d46c1cba4ab54494b77b7c502b453e0aa63ed54532abc586.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.329831 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-Eric-05284056ced34563fd25555921ee5d4a79cbd5d23c08d6fabe50cc92ccda528e.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.336357 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-Lionel-89e708e7393eed1e83f75112f3ab9af814dd3ded27986f3d16c70c0477056404.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.339048 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-b0f3e08bbaf0e104a554900a0be1063389b56eff5f815afd015b34fcc4652003.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.342339 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Quote/AdobeStock_556688421-3684650cd2955a0d1d56a4722df67e81ca802ce52ec3688e2be2dae940df0510.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.344690 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/R2-3c6296bf2343b849b947f8ccfce0de61dd34ba7f9e2a23a53d0a743bc4604e3c.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.346825 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/R2icon-f64fd48f09caf302d87e9aa929c972f42bc2bb4937de421a0a47af258ce12c95.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.349126 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/R2logo-42807db1b52f7e778a6f9e983107a05baaf808a3d8934a36017bab0f7cfc731f.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.351704 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Residential/Residential1-5891146e7925d864f257208d8e3b50b7a27b45a0ab89861c1288fdf49b8d238f.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.354034 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Residential/Residential2-0d5733af4820c3796981d1c86e91b8716d63fe2fa307894b5dc62f0019d1b531.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.356445 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Residential/Residential3-a298e3f12982767aeb2751263716bd51634fdd9066454baf0b7a3c597c08b4a6.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.358639 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Residential/Residential4-59f7a53e2d551c0d090cffdf4441d335155bb3169c3162f149eda7c43b562e43.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.361404 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Residential_page/elavator1-6f58febc0d03aa4ea73408fc2bc3ca8d684b351038cbdc159960e74fa3cd9113.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.363676 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Residential_page/elevator2-5212c9385fe730cac42b6a65ad0a11fd809f9226dc6d6c04335c07a7aff09c2d.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.365949 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/Rocket_Elevator_Assets/Residential_page/elevator3-63a2f9444b26a6d19d435ad2cc2382952a1f49d40712a4bed3a9ab90de987544.jpg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.368159 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/footer_sprite-55e1cbf73ba88f7190b73afd7d248e59bc2d72c5ded8732239512472c1ee94d0.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.370286 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/loader-9034d5d34015e4b05d2c1d1a8dc9f6ec9d59bd96d305eb9e24e24e65c591a645.gif
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.372340 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/n4-9debdfc19321ac200ba0983fb395b9eae47fa63787c98bfaac36ba189765b326.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.374198 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/world-map-7977543d7e302e47ba7608b7273cc2a306c0411aa7a3428ba094b053fa9c68f8.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.759594 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/application-337ad8b75d79b44abddc4d6b56c38b19936affb956c1a43a59161f166dbd3b1c.js
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.759881 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/application-337ad8b75d79b44abddc4d6b56c38b19936affb956c1a43a59161f166dbd3b1c.js.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.767450 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/bootstrap/css/bootstrap.min.css-101b3f61eb20487b2a8e0b76d0ee7c8fe4de9cac2a34a7e246cdb9cff3c5e0b8.map
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.770675 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/bootstrap/js/bootstrap.min.js-45b65676814bee78f75053beb0ed34fda56a054247b5805ee5e95aca4cfce709.map
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.773257 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/jquery/jquery-3.3.1.min-14a62d0001cecb74956ef6e883b6ff7b1ac1cf4883ec6b769555aa8f3fe34cb4.map
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.776141 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/assets/loader-9034d5d34015e4b05d2c1d1a8dc9f6ec9d59bd96d305eb9e24e24e65c591a645.gif
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.778946 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/assets/loader.gif~HEAD
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.780774 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/assets/loader.gif~eefcf359cd03bbfc325328875b42f3efc9a7a30e
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.783172 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/font/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.783417 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/font/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.785687 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/font/revicons.ttf~HEAD
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.787689 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/font/revicons.ttf~eefcf359cd03bbfc325328875b42f3efc9a7a30e
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.789643 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/font/revicons-f7b9c3065e55fa3b9e320093612e7b30dcb14355a44ec461247b495a3e729686.woff
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.791590 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/font/revicons.woff~HEAD
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.793759 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/plugins/slider.revolution/font/revicons.woff~eefcf359cd03bbfc325328875b42f3efc9a7a30e
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:01:50.797712 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/SAVE_essentialsscss-7ecfb687e68630fc56397026739b2eddaf82ee5d532e9df1f9815ae388309554.md
+ DEBUG [7e5ada8e] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210326050100/app/assets/stylesheets/application.scss:26669:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210326050100/app/assets/stylesheets/application.scss:32533:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210326050100/app/assets/stylesheets/application.scss:32546:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [7e5ada8e] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210326050100/app/assets/stylesheets/essentials.scss:3616:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210326050100/app/assets/stylesheets/essentials.scss:3629:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [7e5ada8e] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210326050100/app/assets/stylesheets/settings.scss:1550:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.950521 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/application-4a6ce95cf25be3dc41bb9bc78e7b435857de30c9737c69c12133d702b725f4f3.css
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.950853 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/application-4a6ce95cf25be3dc41bb9bc78e7b435857de30c9737c69c12133d702b725f4f3.css.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.951443 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.951887 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.952668 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.953394 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.954476 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.954822 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.979905 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.984624 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/bootstrap.min.css-101b3f61eb20487b2a8e0b76d0ee7c8fe4de9cac2a34a7e246cdb9cff3c5e0b8.map
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.987209 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.987580 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.990115 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.990443 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.992560 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.992975 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.995078 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.997194 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:41.999318 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/favicon-392743107d0d14fea5699cff1e80d209db7058ef660e643ff9c9f07e990ac084.png
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:42.808616 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/application-641044242fea0fd7d56b82cf00455851d9d1276fb714bc26509b9ef2a3c1814c.js
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:42.808899 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/application-641044242fea0fd7d56b82cf00455851d9d1276fb714bc26509b9ef2a3c1814c.js.gz
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:44.581788 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/application-e4bdd84bfd954f0aeb2ce6f44f0cfaca55348f1563a378b71bbd82417227f005.css
+ DEBUG [7e5ada8e] 	I, [2021-03-26T05:02:44.582076 #15657]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/blazer/application-e4bdd84bfd954f0aeb2ce6f44f0cfaca55348f1563a378b71bbd82417227f005.css.gz
+  INFO [7e5ada8e] Finished in 66.844 seconds with exit status 0 (successful).
+ DEBUG [f41f08cc] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [f41f08cc] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi
+ DEBUG [f41f08cc] Finished in 0.467 seconds with exit status 0 (successful).
+  INFO [a53a4838] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210326050100/assets_manifest_backup as ubuntu@99.79.123.96
+ DEBUG [a53a4838] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210326050100/assets_manifest_backup
+  INFO [a53a4838] Finished in 0.614 seconds with exit status 0 (successful).
+ DEBUG [303e9340] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/.sprockets-manifest* as ubuntu@99.79.123.96
+ DEBUG [303e9340] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/.sprockets-manifest*
+ DEBUG [303e9340] 	/home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/.sprockets-manifest-f4090b73127b0b271cd9b0c9a673ede0.json
+ DEBUG [303e9340] Finished in 0.448 seconds with exit status 0 (successful).
+ DEBUG [85a9ea22] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/.sprockets-manifest* as ubuntu@99.79.123.96
+ DEBUG [85a9ea22] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/.sprockets-manifest*
+ DEBUG [85a9ea22] 	/home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/.sprockets-manifest-f4090b73127b0b271cd9b0c9a673ede0.json
+ DEBUG [85a9ea22] Finished in 0.431 seconds with exit status 0 (successful).
+  INFO [6c0b4bf9] Running /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/.sprockets-manifest-f4090b73127b0b271cd9b0c9a673ede0.json /home/ubuntu/apps/DonNguyen/releases/20210326050100/assets_manifest_backup as ubuntu@99.79.123.96
+ DEBUG [6c0b4bf9] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210326050100/public/assets/.sprockets-manifest-f4090b73127b0b271cd9b0c9a673ede0.json /home/ubuntu/apps/DonNguyen/releases/20210326050100/assets_manifest_backup
+  INFO [6c0b4bf9] Finished in 0.355 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [7ea63376] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi as ubuntu@99.79.123.96
+ DEBUG [7ea63376] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210326050100; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210326050100'" 1>&2; false; fi
+ DEBUG [7ea63376] Finished in 0.313 seconds with exit status 0 (successful).
+  INFO [de618e7c] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate as ubuntu@99.79.123.96
+ DEBUG [de618e7c] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210326050100 && ( export RAILS_ENV="development" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate )
+ DEBUG [de618e7c] 	rake aborted!
+Mysql2::Error::ConnectionError: Access denied for user 'ubuntu'@'localhost' (using password: NO)
+ DEBUG [de618e7c] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `connect'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `initialize'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [de618e7c] 	Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
