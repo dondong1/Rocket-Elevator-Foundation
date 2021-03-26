@@ -4630,3 +4630,8 @@ Install missing gems with `bundle install`
 (nokogiri (~> 1), rake (>= 0)).
 Either installing with `--full-index` or running `bundle update mimemagic`
 should fix the problem.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-03-25 21:49:43 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c6d43389] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@99.79.123.96
+ DEBUG [c6d43389] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/

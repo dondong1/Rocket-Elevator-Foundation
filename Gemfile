@@ -83,6 +83,11 @@ gem 'blazer'
 #facilitates the communication  with Dropbox API v2.
 gem 'dropbox_api'
 
+gem 'nokogiri'
+
+gem 'rake'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -101,7 +106,8 @@ group :development do
   gem 'capistrano-bundler', '>= 1.1.0'
   gem 'rvm1-capistrano3', require: false
   gem 'capistrano3-puma'
-
+  gem 'ed25519', '~> 1.2', '>= 1.2.4'
+  gem 'bcrypt_pbkdf', '~> 1.0.0.alpha1'
 end
 
 group :test do
