@@ -10,7 +10,8 @@ A new section of the Website named "Interventions" must be added and it must be 
                  customer, building, battery, column, elevator, employee 
    4.  Fourht to create a migration for AddInterventionReference, I did: 
                  rails g migration AddInterventionReference
-   5.  Next is to a form for intervention
-   6.  Then update the javascript for the form
-   7.  Then place a link for intervention after an employee sign in into the My Account.
+   5.  Next is to do a form for intervention in the intervention folder under file _form_html_erb
+   6.  Then update the javascript for the form. 
+   7.  Then place a link for intervention after an employee sign in into the My Account (either update your header or open a whole new page.  In my case, I just edit the head view file)
+   8.  
    
