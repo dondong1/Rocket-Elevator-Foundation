@@ -11,7 +11,7 @@ employee_list = [
     first_name: "Nicolas",
     last_name: "Genest",
     title: "CEO",
-    email: "nicolas.genest@codeboxx.biz"
+    email: "+"
   },
   {
     first_name: "Nadya",

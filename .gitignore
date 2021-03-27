@@ -30,7 +30,7 @@
 /config/application.yml
 
 # Ignore database.yml file
-
+/config/database.yml
 
 
 # sendgrid.env

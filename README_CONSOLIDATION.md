@@ -1,17 +1,105 @@
-A new section of the Website named "Interventions" must be added and it must be accessible from the menu after "Contact". Clicking on the new "Interventions" section will bring the visitor to a new view in the Rails application. Please note that this form must be visible and usable on a mobile phone. It is therefore imperative to keep the capacities offered by Bootstrap 4.
+# Week 9 - Consolidation of Achievements
 
------------>
+Improve de application rails and RestAPI
 
-   1.  First to create an Intervention table, I did: 
-                 rails generate scaffold Intervention
-   2.  Second to create a migration for CreateIntervention, I did:  
-                 rails generate migration CreateIntervention
-   3.  Third to modify all the related models:
-                 customer, building, battery, column, elevator, employee 
-   4.  Fourht to create a migration for AddInterventionReference, I did: 
-                 rails g migration AddInterventionReference
-   5.  Next is to do a form for intervention in the intervention folder under file _form_html_erb
-   6.  Then update the javascript for the form. 
-   7.  Then place a link for intervention after an employee sign in into the My Account (either update your header or open a whole new page.  In my case, I just edit the head view file)
-   8.  
-   
+Deployed URL:  https://dondongnguyen.com   
+
+Deployed RESTAPI on Heroku   https://donnguyen.herokuapp.com/api/Interventions
+
+RESTAPI Git Repo: https://github.com/dondong1/Rocket_ELevators_RESTAPI.git
+
+WEB APP REPO: https://github.com/dondong1/Rocket-Elevator-Foundation.git
+
+PRESENTATION VIDEO: https://drive.google.com/file/d/1FAH57OnZ5hbZbIneiU9m_rcNy58Zx_GP/view?usp=sharing
+
+
+#### First Create a scaffold intervention
+It's generate views, model, controller and migration
+```sh 
+rails generate scaffold Intervention
+```
+#### Modify the model intervention
+Explanations to comments in the code block
+```rb
+class Intervention < ApplicationRecord
+  #belongs_to link to the intervention to other tables, the name of column is the table_id
+  # for exemple for :customer the name of the column in the table interventions is customer_id
+  belongs_to :customer
+  belongs_to :building
+  belongs_to :battery, optional: true
+  belongs_to :column, optional: true
+  belongs_to :elevator, optional: true
+  belongs_to :employee, optional: true
+  belongs_to :author, class_name: "Employee"    #class name permit to link the author_id to a employee
+  
+end
+```
+#### Modify the models who belongs the table intervention
+Explanations to comments in the code block
+We take the model employee for exemple:
+```rb
+class Employee < ApplicationRecord
+  belongs_to :user
+  has_many :batteries
+  has_many :interventions   #has_many permit to have multiples interventions
+
+  # Method for format how we show in the dropdown form
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+end
+```
+
+#### Modify the migration of create intervention
+Explanations to comments in the code block
+```rb
+class CreateInterventions < ActiveRecord::Migration[5.2]
+  def change
+    create_table :interventions do |t|
+      #the method :default permit to put a default value when the intervention is create
+      t.datetime :start_date_intervention, :default => nil
+      t.datetime :end_date_intervention, :default => nil
+      t.string :result, :default => "Incomplete"
+      t.text :report
+      t.string :status, :default => "Pending"
+
+      t.timestamps
+    end
+  end
+```
+
+#### Create a migration for add references to the database
+```sh
+rails g migration AddInterventionReference
+```
+Explanations to comments in the code block
+```rb
+class AddInterventionReference < ActiveRecord::Migration[5.2]
+  def change
+    add_reference :interventions, :customer, foreign_key: true
+    add_reference :interventions, :building, foreign_key: true
+    add_reference :interventions, :battery, foreign_key: true
+    add_reference :interventions, :column, foreign_key: true
+    add_reference :interventions, :elevator, foreign_key: true
+    add_reference :interventions, :employee, foreign_key: true
+    add_reference :interventions, :author, foreign_key: {to_table: :employees}
+  end
+end
+
+## Request Rest API
+#### Generate Model & Controller Intervention
+dotnet ef dbcontext scaffold "Server=localhost;Port=3306;Database=RailsApp_development;Uid=root;Pwd=Codeboxx1!;" Mysql.Data.EntityFrameworkCore -o Models -f
+
+(-f for forcing to overwrite those current tables - if clean scaffold then no need -f at the end)
+
+#### First Request
+GET: Returns all fields of all Service Request records that do not have a start date and are in "Pending" status.
+
+#### Second Request
+PUT: Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).
+
+#### Third Request
+PUT: Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).
+
+
+

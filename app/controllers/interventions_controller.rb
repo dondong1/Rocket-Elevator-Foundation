@@ -54,7 +54,7 @@ class InterventionsController < ApplicationController
 
       respond_to do |format|
     
-        format.html { render :show, status: :created, location: @intervention }
+        format.html { render :sh+ow, status: :created, location: @intervention }
         # format.json { render json: @intervention, status: :created }
 
       end
