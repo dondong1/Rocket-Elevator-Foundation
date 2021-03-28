@@ -49,7 +49,7 @@ class InterventionsController < ApplicationController
     end
 
     if @intervention.save!
-      # helpers.ticket_intervention(@intervention, employee, battery_id, column_id, elevator_id)
+      helpers.ticket_intervention(@intervention, employee, battery_id, column_id, elevator_id)
       
 
       respond_to do |format|

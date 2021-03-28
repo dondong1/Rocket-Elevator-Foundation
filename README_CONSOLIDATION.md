@@ -12,6 +12,11 @@ WEB APP REPO: https://github.com/dondong1/Rocket-Elevator-Foundation.git
 
 PRESENTATION VIDEO: https://drive.google.com/file/d/1FAH57OnZ5hbZbIneiU9m_rcNy58Zx_GP/view?usp=sharing
 
+Updated 3/28/2021:  Twilio is working again after creating new ACCOUNT_SID and ACCOUT_TOKEN
+                    Zendesk is working again after regenerate a new API key and replace
+                    dropbox, map, ibm-watson working ok.
+                    
+
 
 #### First Create a scaffold intervention
 It's generate views, model, controller and migration
