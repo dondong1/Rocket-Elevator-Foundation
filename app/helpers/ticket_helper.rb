@@ -4,7 +4,7 @@ module TicketHelper
   def client_con
     client = ZendeskAPI::Client.new do |config|
 
-      config.url = ENV['ZENDESK_URL']
+      config.url = ENV["ZENDESK_URL"]
       config.username = ENV["ZENDESK_USERNAME"]
       config.token = ENV["ZENDESK_TOKEN"]
       config.retry = true
