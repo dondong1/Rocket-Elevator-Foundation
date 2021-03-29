@@ -58,8 +58,9 @@ Rails.application.configure do
     # Use an evented file watcher to asynchronously detect changes in source code,
     # routes, locales, etc. This feature depends on the listen gem.
     config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  
+    # Blazer for development environment
+    ENV["BLAZER_DATABASE_URL"] = "postgres://codeboxx:Codeboxx1!@codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com/DonNguyen"
     # Host
-    # config.action_mailer.default_url_options = { host: "localhost:3000" }
+    config.action_mailer.default_url_options = { host: "localhost:3000" }
   end
   
