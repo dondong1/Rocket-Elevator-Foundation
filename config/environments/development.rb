@@ -64,4 +64,5 @@ Rails.application.configure do
   # Blazer for development environment
   ENV["BLAZER_DATABASE_URL"] = "postgres://codeboxx:Codeboxx1!@codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com/CristianeSanti$eSantiago"
 
+  config.allow_concurrency = true
 end
