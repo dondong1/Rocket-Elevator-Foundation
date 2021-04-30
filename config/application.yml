@@ -1,0 +1,32 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+#slack
+Slack_API: "https://hooks.slack.com/services/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"
+#Tiwlio               
+ACCOUNT_SID: "ACc628ad5823369b24ae52b0ce11ad07ca"
+AUTH_TOKEN: "1aae11b705576a558a6134f9bb97a0b5"
+#IBM Watson
+TEXT_TO_SPEECH_IAM_APIKEY: "alW0SBnBlbVgYqs0845U-oV6OmErmX-EeMiXTvBjWypv"
+TEXT_TO_SPEECH_URL: "https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/cfa1b42e-46ba-4b03-83dd-d46d11422855"
+#Sendgrid
+SENDGRID_API_KEY: "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"
+#Zendesk
+ZENDESK_URL: "https://dondongnguyenhelp.zendesk.com/api/v2"
+ZENDESK_USERNAME: "don_nguyen2001@yahoo.com"
+# ZENDESK_TOKEN: "bb44caa5d740a90f362bfc182314c69b1fa2012985659e9435332b5f0e94d9a1"
+ZENDESK_TOKEN: "Wt2RgYjkCSQPCdwgT27qZr0RiUOj4PPw7yRwoCMq"
+
+#Dropbox
+DROPBOX_OAUTH_BEARER: "6d3b59Y8GE4AAAAAAAAAAa1dkVAWIA6M98cxd2XbcIgUmfDqksou9TSvGvLMsPDF"
+#Google map
+GOOGLE_MAPS_API_KEY: "AIzaSyAB5RqgmEunQ1OSCUreR9ubyKjQVhevUCk"
+SECRET_KEY_BASE: "8a2ff74119cb2b8f14a85dd6e213fa24d8540fc34dcaa7ef8a35c246ae452bfa8702767d19086461ac911e1435481c22663fbd65c97f21f6a91b3fce7687ce63"
