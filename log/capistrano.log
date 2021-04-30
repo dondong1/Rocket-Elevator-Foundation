@@ -17636,3 +17636,1249 @@ Make sure that `gem install mini_racer -v '0.4.0' --source
 
 In Gemfile:
   mini_racer
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-30 09:09:04 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c94de617] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@54.186.105.80
+ DEBUG [c94de617] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [c94de617] Finished in 1.754 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [fa4301ad] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@54.186.105.80
+ DEBUG [fa4301ad] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [fa4301ad] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [f74debc1] Running /usr/bin/env mkdir -p /tmp as ubuntu@54.186.105.80
+ DEBUG [f74debc1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f74debc1] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-6c88d48f82ed6f6873ab.sh 0.0%
+  INFO Uploading /tmp/git-ssh-6c88d48f82ed6f6873ab.sh 100.0%
+  INFO [4cc8d349] Running /usr/bin/env chmod 700 /tmp/git-ssh-6c88d48f82ed6f6873ab.sh as ubuntu@54.186.105.80
+ DEBUG [4cc8d349] Command: /usr/bin/env chmod 700 /tmp/git-ssh-6c88d48f82ed6f6873ab.sh
+  INFO [4cc8d349] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [74d38b92] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@54.186.105.80
+ DEBUG [74d38b92] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [74d38b92] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/DonNguyen/repo
+ DEBUG [042f02bb] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [042f02bb] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [042f02bb] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [c24c05e5] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@54.186.105.80
+ DEBUG [c24c05e5] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c88d48f82ed6f6873ab.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [c24c05e5] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [4d3fcecd] Running /usr/bin/env git remote update --prune as ubuntu@54.186.105.80
+ DEBUG [4d3fcecd] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c88d48f82ed6f6873ab.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4d3fcecd] 	Fetching origin
+ DEBUG [4d3fcecd] 	From https://github.com/dondong1/Rocket-Elevator-Foundation
+   3f96253..dbbf8aa  main       -> main
+  INFO [4d3fcecd] Finished in 1.086 seconds with exit status 0 (successful).
+ DEBUG [8dde6d82] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [8dde6d82] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [8dde6d82] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [c5169008] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430160906 as ubuntu@54.186.105.80
+ DEBUG [c5169008] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c88d48f82ed6f6873ab.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430160906 )
+  INFO [c5169008] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [320fc319] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430160906 as ubuntu@54.186.105.80
+ DEBUG [320fc319] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c88d48f82ed6f6873ab.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430160906 )
+  INFO [320fc319] Finished in 1.111 seconds with exit status 0 (successful).
+ DEBUG [d09d17c7] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [d09d17c7] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [d09d17c7] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [ed04f5d2] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@54.186.105.80
+ DEBUG [ed04f5d2] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c88d48f82ed6f6873ab.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [ed04f5d2] 	dbbf8aa83145d2faef300055911dcde5920c4039
+ DEBUG [ed04f5d2] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [699223a5] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [699223a5] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi
+ DEBUG [699223a5] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [f02c50b7] Running /usr/bin/env echo "dbbf8aa83145d2faef300055911dcde5920c4039" > REVISION as ubuntu@54.186.105.80
+ DEBUG [f02c50b7] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /usr/bin/env echo "dbbf8aa83145d2faef300055911dcde5920c4039" > REVISION
+  INFO [f02c50b7] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [30698e5d] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430160906/config as ubuntu@54.186.105.80
+ DEBUG [30698e5d] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430160906/config
+  INFO [30698e5d] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [9a1a1cea] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [9a1a1cea] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/database.yml ]
+ DEBUG [9a1a1cea] Finished in 0.148 seconds with exit status 1 (failed).
+ DEBUG [3f496c91] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [3f496c91] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/database.yml ]
+ DEBUG [3f496c91] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [6977d49a] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/database.yml as ubuntu@54.186.105.80
+ DEBUG [6977d49a] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/database.yml
+  INFO [6977d49a] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [6dcd82ac] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/database.yml as ubuntu@54.186.105.80
+ DEBUG [6dcd82ac] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/database.yml
+  INFO [6dcd82ac] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [88a6b9f8] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [88a6b9f8] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/application.yml ]
+ DEBUG [88a6b9f8] Finished in 0.143 seconds with exit status 1 (failed).
+ DEBUG [fd2cc20c] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [fd2cc20c] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/application.yml ]
+ DEBUG [fd2cc20c] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [20f3f0d4] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/application.yml as ubuntu@54.186.105.80
+ DEBUG [20f3f0d4] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/application.yml
+  INFO [20f3f0d4] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [49e18340] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/application.yml as ubuntu@54.186.105.80
+ DEBUG [49e18340] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210430160906/config/application.yml
+  INFO [49e18340] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [6d18a5d6] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp /home/ubuntu/apps/DonNguyen/releases/20210430160906 /home/ubuntu/apps/DonNguyen/releases/20210430160906/public as ubuntu@54.186.105.80
+ DEBUG [6d18a5d6] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp /home/ubuntu/apps/DonNguyen/releases/20210430160906 /home/ubuntu/apps/DonNguyen/releases/20210430160906/public
+  INFO [6d18a5d6] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [62e316a7] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/pids ] as ubuntu@54.186.105.80
+ DEBUG [62e316a7] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/pids ]
+ DEBUG [62e316a7] Finished in 0.148 seconds with exit status 1 (failed).
+ DEBUG [95aebc4b] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/pids ] as ubuntu@54.186.105.80
+ DEBUG [95aebc4b] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/pids ]
+ DEBUG [95aebc4b] Finished in 0.144 seconds with exit status 1 (failed).
+  INFO [a72dcdbb] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/pids as ubuntu@54.186.105.80
+ DEBUG [a72dcdbb] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/pids
+  INFO [a72dcdbb] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [5ad4b189] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/sockets ] as ubuntu@54.186.105.80
+ DEBUG [5ad4b189] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/sockets ]
+ DEBUG [5ad4b189] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [a181101d] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/sockets ] as ubuntu@54.186.105.80
+ DEBUG [a181101d] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/sockets ]
+ DEBUG [a181101d] Finished in 0.142 seconds with exit status 1 (failed).
+  INFO [484ddd3d] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/sockets as ubuntu@54.186.105.80
+ DEBUG [484ddd3d] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210430160906/tmp/sockets
+  INFO [484ddd3d] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [b5049d42] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/log ] as ubuntu@54.186.105.80
+ DEBUG [b5049d42] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/log ]
+ DEBUG [b5049d42] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [311f305e] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430160906/log ] as ubuntu@54.186.105.80
+ DEBUG [311f305e] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430160906/log ]
+ DEBUG [311f305e] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [962551d3] Running /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210430160906/log as ubuntu@54.186.105.80
+ DEBUG [962551d3] Command: /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210430160906/log
+  INFO [962551d3] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [12848482] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210430160906/log as ubuntu@54.186.105.80
+ DEBUG [12848482] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210430160906/log
+  INFO [12848482] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [7862663e] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets ] as ubuntu@54.186.105.80
+ DEBUG [7862663e] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets ]
+ DEBUG [7862663e] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [61a6e8ef] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets ] as ubuntu@54.186.105.80
+ DEBUG [61a6e8ef] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets ]
+ DEBUG [61a6e8ef] Finished in 0.144 seconds with exit status 1 (failed).
+  INFO [1c02b6f1] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets as ubuntu@54.186.105.80
+ DEBUG [1c02b6f1] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets
+  INFO [1c02b6f1] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [01cc56f8] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [01cc56f8] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi
+ DEBUG [01cc56f8] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [deadc675] Running /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install . as ubuntu@54.186.105.80
+ DEBUG [deadc675] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install .
+ DEBUG [deadc675] 	Already installed ruby-2.6.6.
+To reinstall use:
+
+    rvm reinstall ruby-2.6.6
+
+  INFO [deadc675] Finished in 0.608 seconds with exit status 0 (successful).
+  INFO [a1aa66d3] Running /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD as ubuntu@54.186.105.80
+ DEBUG [a1aa66d3] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c88d48f82ed6f6873ab.sh" ; /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD )
+ DEBUG [a1aa66d3] 	dbbf8aa83145d2faef300055911dcde5920c4039	HEAD
+  INFO [a1aa66d3] Finished in 0.344 seconds with exit status 0 (successful).
+  INFO [e464dddd] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases as ubuntu@54.186.105.80
+ DEBUG [e464dddd] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases
+  INFO [e464dddd] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [ffa08aac] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets as ubuntu@54.186.105.80
+ DEBUG [ffa08aac] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets
+  INFO [ffa08aac] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [3138e38d] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config as ubuntu@54.186.105.80
+ DEBUG [3138e38d] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config
+  INFO [3138e38d] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [7defe2b4] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [7defe2b4] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ]
+ DEBUG [7defe2b4] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [be44d3bc] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [be44d3bc] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ]
+ DEBUG [be44d3bc] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [072c4c34] Running [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ] as ubuntu@54.186.105.80
+ DEBUG [072c4c34] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ]
+ DEBUG [072c4c34] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [6382d5de] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430160906/REVISION ] as ubuntu@54.186.105.80
+ DEBUG [6382d5de] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430160906/REVISION ]
+ DEBUG [6382d5de] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [59d9974a] Running /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210430160906/REVISION 2>/dev/null as ubuntu@54.186.105.80
+ DEBUG [59d9974a] Command: /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210430160906/REVISION 2>/dev/null
+ DEBUG [59d9974a] 	dbbf8aa83145d2faef300055911dcde5920c4039
+ DEBUG [59d9974a] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [855c639f] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [855c639f] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi
+ DEBUG [855c639f] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [9d73ce1f] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true as ubuntu@54.186.105.80
+ DEBUG [9d73ce1f] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true
+  INFO [9d73ce1f] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO [05b828be] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle as ubuntu@54.186.105.80
+ DEBUG [05b828be] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle
+  INFO [05b828be] Finished in 0.996 seconds with exit status 0 (successful).
+  INFO [5a7e4e08] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production as ubuntu@54.186.105.80
+ DEBUG [5a7e4e08] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production
+  INFO [5a7e4e08] Finished in 1.008 seconds with exit status 0 (successful).
+ DEBUG [d87656f4] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [d87656f4] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi
+ DEBUG [d87656f4] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [21935e6e] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check as ubuntu@54.186.105.80
+ DEBUG [21935e6e] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check
+ DEBUG [21935e6e] 	The following gems are missing
+ DEBUG [21935e6e] 	 * mini_racer (0.4.0)
+ DEBUG [21935e6e] 	Install missing gems with `bundle install`
+ DEBUG [21935e6e] Finished in 1.259 seconds with exit status 1 (failed).
+  INFO [06f78a62] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle install --jobs 4 --quiet as ubuntu@54.186.105.80
+ DEBUG [06f78a62] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle install --jobs 4 --quiet
+  INFO [06f78a62] Finished in 11.762 seconds with exit status 0 (successful).
+ DEBUG [38c98aca] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [38c98aca] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi
+ DEBUG [38c98aca] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [47c553c0] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile as ubuntu@54.186.105.80
+ DEBUG [47c553c0] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && ( export RAILS_ENV="development" RAILS_GROUPS="" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile )
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.938471 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/rails_admin-eebcd655d5902d989a74437bcf9d4932be3595750be06e6138877a096aa0f3fe.css
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.938879 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/rails_admin-eebcd655d5902d989a74437bcf9d4932be3595750be06e6138877a096aa0f3fe.css.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.939275 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/aristo/images/bg_fallback-bad53cee26694a42bdba717337e2de9f997ebf3ded300b8c3ff48ac5192c1903.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.939647 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/aristo/images/ui-icons_222222_256x240-310ae73efc6774716f0a80ce2141565fddec51702330a8066fd5e220437ae321.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.940058 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/aristo/images/ui-icons_454545_256x240-d59c6da436d1a19aa35bcbf2d400ad160f2b2568fbbfa2f9ebfc192d14025474.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.940402 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/aristo/images/icon_sprite-34a30806fcba43a2effc9739cb7a370a865199a7d38bfcbc7c2474ef3ff70ded.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.940740 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/aristo/images/slider_handles-4b523f3d1bd18af5fec23ec7d58ed85e4c7e8f4685fe85a8407e2d9017bf6484.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.941082 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/aristo/images/progress_bar-a2ed712d76dcffc7a06918cd389511bca2cf7bb91c12b1d865bf44c7b2c46289.gif
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.969919 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/multiselect/icon_sprite-34a30806fcba43a2effc9739cb7a370a865199a7d38bfcbc7c2474ef3ff70ded.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.970493 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-light-e7daf3169259a9fd6b8177b8e89ff2b964cd3dababd580a46d7fb4eecc07763b.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.970990 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-dark-bb53269e44173a496d2620bad201ca838a57b67c40b3439b5ce89345ef9e888b.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.971472 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-light-e1698d37f37f7db85ce6736810a34b1a229306be8a3f3be156fbaa47dd6cd160.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.971937 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-dark-2bf097798e2b1db766a16ff4f335d3fe94bd51f92dc2ddf47c8a370ba31189c0.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.972413 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/select2-8ddf680d1a86d603653e43f694bbb6dc1010aa81f5c0c9c87181e10e064e503b.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.972841 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_background-52967b595ae718ad95520b9cf2b22551fb8cb0d81a171db869b00d2b604b4976.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.973315 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/colorpicker_overlay-ba21ab85c59167b61af508e34a22ee344c97bb11454d287a47691fa2fb182856.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.973838 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/colorpicker_select-980ae86d6aab751f6f67a1191d78c0fa54b533583456b905ec43b34d5806ee2d.gif
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.978090 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_indic-8ca62ee85015e67671f2312a2fead633740335f65e254d8f4c3ea29b99f62de7.gif
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.978584 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_hex-4b1a7b08312edc3732cf30c7d8d5291abea41c64311c3d05d67a586cbe3dcf37.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.979044 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_rgb_r-54289ccad89df00514d84ba6d16d1a0abc0d61de95dcfc054bf2202e238a7cb6.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.979508 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_rgb_g-8ab4d41c46fc26080b75eecc6f8c25d8f6db5264cf56ecc4993f86d100ebd71f.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.979976 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_rgb_b-22f2da1810cd9da18a1f93418b8f45bd3cb676aa9790ad5e1aba37779fb3ac31.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.980444 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_hsb_h-df01edb80a710cdd9d9057201eaa682a8c86cd80ad6c6929f1d4a9182ad6aed3.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.980913 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_hsb_s-9277f3fd9eb79baef2384f7b38968184fd40d631024149c7b41543b7796c0706.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.981377 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_hsb_b-7160b5fd5c5779102cb91f771b80ef2621dabe10bf06e8359deaefece831b58b.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.981934 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/colorpicker/custom_submit-3a57bad878f6d608b998e36acefe2325d786d4631abeecc5d400ca5c062f5ce5.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.982432 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.983013 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.989660 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.990311 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.990947 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.994118 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.997667 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:46.998689 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.012053 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.021793 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.145564 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/jquery.colorpicker-61e84e7ad7d0df15d0eaca7bea1f80cd900223b4dbfae12becc5899225a3a608.css
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.146003 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/rails_admin/jquery.colorpicker-61e84e7ad7d0df15d0eaca7bea1f80cd900223b4dbfae12becc5899225a3a608.css.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.149398 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/et-line-c87236b5783f4fbe582e2122775a8bec52564850060ae17250d7a4265d8d42a3.ttf
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.149819 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/et-line-c87236b5783f4fbe582e2122775a8bec52564850060ae17250d7a4265d8d42a3.ttf.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.154586 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/et-line-19d2f43d546ada73dd083f7778aa4a5cac1a8e7a3af56efccae580fce07a5e1c.woff
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.158115 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.160842 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.161222 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.163714 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/revicons-f7b9c3065e55fa3b9e320093612e7b30dcb14355a44ec461247b495a3e729686.woff
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.166577 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/33-min-c80e2e33faa0103f19975785b5fd5340e359d14ee82dd094edcaf50f99db084c.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.168780 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/34-min-dd6636c9c6f9220b27f75d6511afb74ee8d1e0088d36851b38cd649cee0a2c14.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.172756 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/AdobeStock_112233448-761bf244affd38950d2a904d5854d8c9b50b41bc826c1b8200884cf05c08d2a6.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.176066 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/AdobeStock_146216308-243af9b80d865642878067a7387a2419cd5ad8d7d9061ae30fd913bbafcf3acb.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.179617 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/AdobeStock_162479912-625d3b461e101d232a1bd9b066df24f44a03907c85dddcf946b5dae2b14a0ae2.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.183605 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/AdobeStock_170843598-28bff19bacc9a33bafc053734ea772c5e0bbdb5ce5087f0dac2a0b044e9eea1d.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.187437 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/AdobeStock_445566995-0d25906335064889229cf8633e3c85b04eb74a420c02b0e1aa6ce10f1b26f1d1.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.191457 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/AdobeStock_669955441-531a8af52edbe125b7f1f2d03cbe75f0277c9b49429a6d822ddfed66606dddc7.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.194649 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/AdobeStock_72034307-d4f0bb9f9a2b537416ee8a1a420fef33cba4bb95a7827bd98260bada561acc62.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.198851 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Awards/AdobeStock_123456789-1fe21f85bb5ad59a6359acd1357abded74ea1b28243022f8bba25d566c26e303.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.201791 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Awards/award1-79716e0018ea8fba2f8d77b8f17eca1e830614704ee4a087755df049da427d0c.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.205185 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Awards/award2-6bd7e2af2b2cc752a84c0c8f9751cbffd7471cdf95ae36419653665b379bd059.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.208537 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Awards/award3-52c8757eff2902e0befc3b8ef700e1275693aebda7ad168eed071e63ce70244b.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.210795 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Awards/award4-2aaaa1f4e6560846ae9607dd59f66261a1a6a866c44901566fa2d8dd5a0d0e12.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.214082 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Commercial_Page/AdobeStock_112233445-e9f91683783fa1564b50f350fda2222092c19723ec846a78ace5ef72e3c536c8.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.216854 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Commercial_Page/AdobeStock_665544228-be2441f734ebe67c441a4707ead61f5fa4de853f85ed812637c9e7c4afe74792.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.220300 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Commercial_Page/AdobeStock_885566447-e8f63616f64183a3aa39e0694bee7d391c59f5b7132e11ab3988d0deb4e233a7.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.224448 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Commercial_Page/AdobeStock_987654321-b5fe72927743ede49d63f6c53015c1fcc5a6e913d5d19b6854e0bc493f827e0b.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.227564 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Corporate/Corporate1-62b9f9c465e61a9d1435916bce9583b37e19422e3ac24a49a52974073f9013fb.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.230982 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Corporate/Corporate2-9b88fedc1fc78a9c1403193ee9d1dd643c38c59789b709b66ec8433046f2d9c1.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.234623 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Corporate/Corporate3-f75ee1971b318bdb4921e4d0701cabfe1922512644ee148a3a5955611f07c1aa.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.237940 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Corporate/Corporate4-5f843384f12f5c569993bdaa8b8c1f4ae9b1ec4c90b8ee33bd763fdfa7ace7aa.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.240192 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer1-cb53f67a20b9de843b809715155481e5e3ffc4ecb088c5cab2a4b694209efbd3.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.242865 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer10-255a57fe3adeea97cca82afa2bf904a43792e91f7872a1ac2db5e7ad050c6aed.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.245619 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer11-bb333cd77bcbab7a4f67742bbd8ab41038daaa4d0c9b59c3b4efa6c73d2b9aac.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.247778 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer12-a30d8fa948ffa94ba40928eb7be418c47d5cbf349b6894f24e5fe3d7fe4bde81.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.250586 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer2-7481a9a448771bc153b99b6dadce05862228a628c84368c1543f767e82d5f43c.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.253109 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer3-296777822573934d188dc03e93843bdd566af511b288a12508ebe3d0b41ad0c0.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.255204 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer4-de3c0494323023449391d2adc2faaf65e37624941d95fb69c6d6ee718d422096.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.258055 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer5-423452dad0608c22d535e8823b75cca6be4da20e1358eb71005178adf59fe7f3.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.260103 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer6-bda13c01d6af6eefcfc2f9e9f322d702d4e4388ed4facf33a1ec9b724964c644.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.262802 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer7-ddbaa125fcec180e9155ebec87765367067aa620c2eae7529af0ba9196694eb4.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.265408 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer8-6188b24308a227d9d4bf724c585e5acbb3f06a45414b426140283bec9ccf58ba.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.268239 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Customer/customer9-8bf1af437da9caecc7e7245777aaacf5e9a640be70e8a80c2ae325f18025aa72.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.271882 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/M-82cfc8cefc82473098b645d0abfa83c6479197f4f6e77903c0f000700cfc6deb.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.275606 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/News/News1-94d8390f8ee1361ef40f50fdc7a3ac4efb599818aa812f6788d50c322bb8290e.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.278949 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/News/News2-848d01d7928fc36981a468657067ae83f3819dbe23c9764938dce8eef30cd537.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.282436 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/News/News3-5365f586ae63d63aecbfb535f6c24a72448a587b090c2a38c6cde8dd5b98d8bb.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.285859 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/News/News4-97e5a0e1fdd3b65b8c56606cfc2f2c0509c6ab60d22444f0355c4e49601203b4.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.288637 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/News/News5-74ab312980de54e43083f0f68d80361e656b2cbebc5e08e1fbe673e65d79453a.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.291925 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/News/News6-141f6b8b56276a590eea36101dd780e233462341086cb4a87f085f11ee902e52.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.294921 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/People/CEO-cbdea61d1fe82220f3a5ce6aeff2ee60c4a63a8016c2e3984b353f84661771fa.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.297749 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-Abdul-79f19e5930fa83f2aa74af73b20b54cbe0434ef79a8786db5cebe85aea717411.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.301248 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-Ahsan-eacc1e00f20125a3d46c1cba4ab54494b77b7c502b453e0aa63ed54532abc586.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.303825 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-Eric-05284056ced34563fd25555921ee5d4a79cbd5d23c08d6fabe50cc92ccda528e.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.312485 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-Lionel-89e708e7393eed1e83f75112f3ab9af814dd3ded27986f3d16c70c0477056404.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.317766 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/People/employee-of-the-month-b0f3e08bbaf0e104a554900a0be1063389b56eff5f815afd015b34fcc4652003.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.322035 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Quote/AdobeStock_556688421-3684650cd2955a0d1d56a4722df67e81ca802ce52ec3688e2be2dae940df0510.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.325583 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/R2-3c6296bf2343b849b947f8ccfce0de61dd34ba7f9e2a23a53d0a743bc4604e3c.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.328238 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/R2icon-f64fd48f09caf302d87e9aa929c972f42bc2bb4937de421a0a47af258ce12c95.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.330924 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/R2logo-42807db1b52f7e778a6f9e983107a05baaf808a3d8934a36017bab0f7cfc731f.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.334423 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Residential/Residential1-5891146e7925d864f257208d8e3b50b7a27b45a0ab89861c1288fdf49b8d238f.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.337616 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Residential/Residential2-0d5733af4820c3796981d1c86e91b8716d63fe2fa307894b5dc62f0019d1b531.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.341356 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Residential/Residential3-a298e3f12982767aeb2751263716bd51634fdd9066454baf0b7a3c597c08b4a6.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.344225 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Residential/Residential4-59f7a53e2d551c0d090cffdf4441d335155bb3169c3162f149eda7c43b562e43.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.347933 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Residential_page/elavator1-6f58febc0d03aa4ea73408fc2bc3ca8d684b351038cbdc159960e74fa3cd9113.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.351157 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Residential_page/elevator2-5212c9385fe730cac42b6a65ad0a11fd809f9226dc6d6c04335c07a7aff09c2d.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.354152 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/Rocket_Elevator_Assets/Residential_page/elevator3-63a2f9444b26a6d19d435ad2cc2382952a1f49d40712a4bed3a9ab90de987544.jpg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.356585 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/footer_sprite-55e1cbf73ba88f7190b73afd7d248e59bc2d72c5ded8732239512472c1ee94d0.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.359132 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/loader-9034d5d34015e4b05d2c1d1a8dc9f6ec9d59bd96d305eb9e24e24e65c591a645.gif
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.361526 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/n4-9debdfc19321ac200ba0983fb395b9eae47fa63787c98bfaac36ba189765b326.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.363534 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/world-map-7977543d7e302e47ba7608b7273cc2a306c0411aa7a3428ba094b053fa9c68f8.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.771798 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/application-337ad8b75d79b44abddc4d6b56c38b19936affb956c1a43a59161f166dbd3b1c.js
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.773267 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/application-337ad8b75d79b44abddc4d6b56c38b19936affb956c1a43a59161f166dbd3b1c.js.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.783627 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/bootstrap/css/bootstrap.min.css-101b3f61eb20487b2a8e0b76d0ee7c8fe4de9cac2a34a7e246cdb9cff3c5e0b8.map
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.789795 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/bootstrap/js/bootstrap.min.js-45b65676814bee78f75053beb0ed34fda56a054247b5805ee5e95aca4cfce709.map
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.795851 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/jquery/jquery-3.3.1.min-14a62d0001cecb74956ef6e883b6ff7b1ac1cf4883ec6b769555aa8f3fe34cb4.map
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.799510 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/assets/loader-9034d5d34015e4b05d2c1d1a8dc9f6ec9d59bd96d305eb9e24e24e65c591a645.gif
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.802740 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/assets/loader.gif~HEAD
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.807615 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/assets/loader.gif~eefcf359cd03bbfc325328875b42f3efc9a7a30e
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.810582 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/font/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.810949 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/font/revicons-4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a.ttf.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.814886 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/font/revicons.ttf~HEAD
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.818790 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/font/revicons.ttf~eefcf359cd03bbfc325328875b42f3efc9a7a30e
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.822723 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/font/revicons-f7b9c3065e55fa3b9e320093612e7b30dcb14355a44ec461247b495a3e729686.woff
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.824798 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/font/revicons.woff~HEAD
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.831458 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/plugins/slider.revolution/font/revicons.woff~eefcf359cd03bbfc325328875b42f3efc9a7a30e
+ DEBUG [47c553c0] 	I, [2021-04-30T16:09:47.838872 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/SAVE_essentialsscss-7ecfb687e68630fc56397026739b2eddaf82ee5d532e9df1f9815ae388309554.md
+ DEBUG [47c553c0] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430160906/app/assets/stylesheets/application.scss:26669:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [47c553c0] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430160906/app/assets/stylesheets/application.scss:32533:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [47c553c0] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430160906/app/assets/stylesheets/application.scss:32546:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [47c553c0] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430160906/app/assets/stylesheets/essentials.scss:3616:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [47c553c0] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430160906/app/assets/stylesheets/essentials.scss:3629:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [47c553c0] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430160906/app/assets/stylesheets/settings.scss:1550:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.663342 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/application-ff8df5b6253550be67d17509f5fe0aefd2b5097d21299ce7b950ee45db75faae.css
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.667234 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/application-ff8df5b6253550be67d17509f5fe0aefd2b5097d21299ce7b950ee45db75faae.css.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.675564 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.677134 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.682664 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.740378 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.741764 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.745657 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.748239 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.759736 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/bootstrap.min.css-101b3f61eb20487b2a8e0b76d0ee7c8fe4de9cac2a34a7e246cdb9cff3c5e0b8.map
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.777579 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.777858 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.785843 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.786381 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.794606 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.795071 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.805993 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.814214 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:33.825177 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/favicon-392743107d0d14fea5699cff1e80d209db7058ef660e643ff9c9f07e990ac084.png
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:34.791249 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/application-641044242fea0fd7d56b82cf00455851d9d1276fb714bc26509b9ef2a3c1814c.js
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:34.793435 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/application-641044242fea0fd7d56b82cf00455851d9d1276fb714bc26509b9ef2a3c1814c.js.gz
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:35.176835 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/application-e4bdd84bfd954f0aeb2ce6f44f0cfaca55348f1563a378b71bbd82417227f005.css
+ DEBUG [47c553c0] 	I, [2021-04-30T16:10:35.177405 #29931]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/blazer/application-e4bdd84bfd954f0aeb2ce6f44f0cfaca55348f1563a378b71bbd82417227f005.css.gz
+  INFO [47c553c0] Finished in 63.966 seconds with exit status 0 (successful).
+ DEBUG [362230b6] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [362230b6] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi
+ DEBUG [362230b6] Finished in 0.223 seconds with exit status 0 (successful).
+  INFO [c94efd37] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430160906/assets_manifest_backup as ubuntu@54.186.105.80
+ DEBUG [c94efd37] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430160906/assets_manifest_backup
+  INFO [c94efd37] Finished in 0.170 seconds with exit status 0 (successful).
+ DEBUG [1eb0ccde] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/.sprockets-manifest* as ubuntu@54.186.105.80
+ DEBUG [1eb0ccde] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/.sprockets-manifest*
+ DEBUG [1eb0ccde] 	/home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json
+ DEBUG [1eb0ccde] Finished in 0.174 seconds with exit status 0 (successful).
+ DEBUG [84574389] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/.sprockets-manifest* as ubuntu@54.186.105.80
+ DEBUG [84574389] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/.sprockets-manifest*
+ DEBUG [84574389] 	/home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json
+ DEBUG [84574389] Finished in 0.162 seconds with exit status 0 (successful).
+  INFO [23fdc058] Running /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json /home/ubuntu/apps/DonNguyen/releases/20210430160906/assets_manifest_backup as ubuntu@54.186.105.80
+ DEBUG [23fdc058] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210430160906/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json /home/ubuntu/apps/DonNguyen/releases/20210430160906/assets_manifest_backup
+  INFO [23fdc058] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [4457d4e9] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [4457d4e9] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430160906; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430160906'" 1>&2; false; fi
+ DEBUG [4457d4e9] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [1971cf2b] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate as ubuntu@54.186.105.80
+ DEBUG [1971cf2b] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430160906 && ( export RAILS_ENV="development" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate )
+ DEBUG [1971cf2b] 	rake aborted!
+ DEBUG [1971cf2b] 	ActiveRecord::NoDatabaseError: Unknown database 'RailsApp_development'
+ DEBUG [1971cf2b] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [1971cf2b] 	
+Caused by:
+ DEBUG [1971cf2b] 	Mysql2::Error: Unknown database 'RailsApp_development'
+ DEBUG [1971cf2b] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `connect'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `initialize'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [1971cf2b] 	Tasks: TOP => db:migrate
+ DEBUG [1971cf2b] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-30 09:36:03 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9d0bde06] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@54.186.105.80
+ DEBUG [9d0bde06] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [9d0bde06] Finished in 1.620 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [993c3638] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@54.186.105.80
+ DEBUG [993c3638] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [993c3638] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [bcc68f34] Running /usr/bin/env mkdir -p /tmp as ubuntu@54.186.105.80
+ DEBUG [bcc68f34] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bcc68f34] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a2cc89b8170f3b175e7b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a2cc89b8170f3b175e7b.sh 100.0%
+  INFO [bb1c1e7b] Running /usr/bin/env chmod 700 /tmp/git-ssh-a2cc89b8170f3b175e7b.sh as ubuntu@54.186.105.80
+ DEBUG [bb1c1e7b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-a2cc89b8170f3b175e7b.sh
+  INFO [bb1c1e7b] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [64508ab4] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@54.186.105.80
+ DEBUG [64508ab4] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [64508ab4] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/DonNguyen/repo
+ DEBUG [7fa609ca] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [7fa609ca] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [7fa609ca] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [a15f01b3] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@54.186.105.80
+ DEBUG [a15f01b3] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a2cc89b8170f3b175e7b.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [a15f01b3] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [cf51126c] Running /usr/bin/env git remote update --prune as ubuntu@54.186.105.80
+ DEBUG [cf51126c] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a2cc89b8170f3b175e7b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [cf51126c] 	Fetching origin
+  INFO [cf51126c] Finished in 0.633 seconds with exit status 0 (successful).
+ DEBUG [c622a28d] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [c622a28d] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [c622a28d] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [93ab3556] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163605 as ubuntu@54.186.105.80
+ DEBUG [93ab3556] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a2cc89b8170f3b175e7b.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163605 )
+  INFO [93ab3556] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [3c777506] Running /usr/bin/env git archive \ | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430163605 as ubuntu@54.186.105.80
+ DEBUG [3c777506] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a2cc89b8170f3b175e7b.sh" ; /usr/bin/env git archive \ | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430163605 )
+ DEBUG [3c777506] 	fatal: Not a valid object name
+ DEBUG [3c777506] 	tar: 
+ DEBUG [3c777506] 	This does not look like a tar archive
+ DEBUG [3c777506] 	
+ DEBUG [3c777506] 	tar: 
+ DEBUG [3c777506] 	Exiting with failure status due to previous errors
+ DEBUG [3c777506] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-30 09:36:26 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [de7f48cd] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@54.186.105.80
+ DEBUG [de7f48cd] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [de7f48cd] Finished in 1.060 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [7add96e4] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@54.186.105.80
+ DEBUG [7add96e4] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [7add96e4] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [49e94ca0] Running /usr/bin/env mkdir -p /tmp as ubuntu@54.186.105.80
+ DEBUG [49e94ca0] Command: /usr/bin/env mkdir -p /tmp
+  INFO [49e94ca0] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-85241e7a045257e61d10.sh 0.0%
+  INFO Uploading /tmp/git-ssh-85241e7a045257e61d10.sh 100.0%
+  INFO [126be961] Running /usr/bin/env chmod 700 /tmp/git-ssh-85241e7a045257e61d10.sh as ubuntu@54.186.105.80
+ DEBUG [126be961] Command: /usr/bin/env chmod 700 /tmp/git-ssh-85241e7a045257e61d10.sh
+  INFO [126be961] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [4d338979] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@54.186.105.80
+ DEBUG [4d338979] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [4d338979] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/DonNguyen/repo
+ DEBUG [d00eea45] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [d00eea45] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [d00eea45] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [7d1cbb29] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@54.186.105.80
+ DEBUG [7d1cbb29] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-85241e7a045257e61d10.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [7d1cbb29] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [3a5af082] Running /usr/bin/env git remote update --prune as ubuntu@54.186.105.80
+ DEBUG [3a5af082] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-85241e7a045257e61d10.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [3a5af082] 	Fetching origin
+  INFO [3a5af082] Finished in 0.356 seconds with exit status 0 (successful).
+ DEBUG [a8cf587c] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [a8cf587c] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [a8cf587c] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [a555ba49] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163627 as ubuntu@54.186.105.80
+ DEBUG [a555ba49] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-85241e7a045257e61d10.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163627 )
+  INFO [a555ba49] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [8b0673ad] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430163627 as ubuntu@54.186.105.80
+ DEBUG [8b0673ad] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-85241e7a045257e61d10.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430163627 )
+  INFO [8b0673ad] Finished in 1.411 seconds with exit status 0 (successful).
+ DEBUG [2bb41b59] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [2bb41b59] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [2bb41b59] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [7ea5110a] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@54.186.105.80
+ DEBUG [7ea5110a] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-85241e7a045257e61d10.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [7ea5110a] 	dbbf8aa83145d2faef300055911dcde5920c4039
+ DEBUG [7ea5110a] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [060206c2] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [060206c2] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi
+ DEBUG [060206c2] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [5867e752] Running /usr/bin/env echo "dbbf8aa83145d2faef300055911dcde5920c4039" > REVISION as ubuntu@54.186.105.80
+ DEBUG [5867e752] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /usr/bin/env echo "dbbf8aa83145d2faef300055911dcde5920c4039" > REVISION
+  INFO [5867e752] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [91f24532] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163627/config as ubuntu@54.186.105.80
+ DEBUG [91f24532] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163627/config
+  INFO [91f24532] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [f2c3239d] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [f2c3239d] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/database.yml ]
+ DEBUG [f2c3239d] Finished in 0.147 seconds with exit status 1 (failed).
+ DEBUG [3680bb5f] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [3680bb5f] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/database.yml ]
+ DEBUG [3680bb5f] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [0fa68d4c] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/database.yml as ubuntu@54.186.105.80
+ DEBUG [0fa68d4c] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/database.yml
+  INFO [0fa68d4c] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [44237fa1] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/database.yml as ubuntu@54.186.105.80
+ DEBUG [44237fa1] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/database.yml
+  INFO [44237fa1] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [9d9f66a0] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [9d9f66a0] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/application.yml ]
+ DEBUG [9d9f66a0] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [62eb3b5b] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [62eb3b5b] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/application.yml ]
+ DEBUG [62eb3b5b] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [3a449521] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/application.yml as ubuntu@54.186.105.80
+ DEBUG [3a449521] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/application.yml
+  INFO [3a449521] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [27b73538] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/application.yml as ubuntu@54.186.105.80
+ DEBUG [27b73538] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210430163627/config/application.yml
+  INFO [27b73538] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [a30c6e4c] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp /home/ubuntu/apps/DonNguyen/releases/20210430163627 /home/ubuntu/apps/DonNguyen/releases/20210430163627/public as ubuntu@54.186.105.80
+ DEBUG [a30c6e4c] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp /home/ubuntu/apps/DonNguyen/releases/20210430163627 /home/ubuntu/apps/DonNguyen/releases/20210430163627/public
+  INFO [a30c6e4c] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [2fc9359d] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/pids ] as ubuntu@54.186.105.80
+ DEBUG [2fc9359d] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/pids ]
+ DEBUG [2fc9359d] Finished in 0.140 seconds with exit status 1 (failed).
+ DEBUG [05eaa836] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/pids ] as ubuntu@54.186.105.80
+ DEBUG [05eaa836] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/pids ]
+ DEBUG [05eaa836] Finished in 0.146 seconds with exit status 1 (failed).
+  INFO [f7a9889b] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/pids as ubuntu@54.186.105.80
+ DEBUG [f7a9889b] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/pids
+  INFO [f7a9889b] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [c2482d92] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/sockets ] as ubuntu@54.186.105.80
+ DEBUG [c2482d92] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/sockets ]
+ DEBUG [c2482d92] Finished in 0.143 seconds with exit status 1 (failed).
+ DEBUG [423cdc17] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/sockets ] as ubuntu@54.186.105.80
+ DEBUG [423cdc17] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/sockets ]
+ DEBUG [423cdc17] Finished in 0.145 seconds with exit status 1 (failed).
+  INFO [59cb5b89] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/sockets as ubuntu@54.186.105.80
+ DEBUG [59cb5b89] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210430163627/tmp/sockets
+  INFO [59cb5b89] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [7af4be3c] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/log ] as ubuntu@54.186.105.80
+ DEBUG [7af4be3c] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/log ]
+ DEBUG [7af4be3c] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [936c9d7f] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430163627/log ] as ubuntu@54.186.105.80
+ DEBUG [936c9d7f] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430163627/log ]
+ DEBUG [936c9d7f] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [d626af84] Running /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210430163627/log as ubuntu@54.186.105.80
+ DEBUG [d626af84] Command: /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210430163627/log
+  INFO [d626af84] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [abb68591] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210430163627/log as ubuntu@54.186.105.80
+ DEBUG [abb68591] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210430163627/log
+  INFO [abb68591] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [d9ab4ed9] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets ] as ubuntu@54.186.105.80
+ DEBUG [d9ab4ed9] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets ]
+ DEBUG [d9ab4ed9] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [d7d5a50b] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets ] as ubuntu@54.186.105.80
+ DEBUG [d7d5a50b] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets ]
+ DEBUG [d7d5a50b] Finished in 0.145 seconds with exit status 1 (failed).
+  INFO [153d58da] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets as ubuntu@54.186.105.80
+ DEBUG [153d58da] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets
+  INFO [153d58da] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [5c7d083d] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [5c7d083d] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi
+ DEBUG [5c7d083d] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [d0f00f59] Running /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install . as ubuntu@54.186.105.80
+ DEBUG [d0f00f59] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install .
+ DEBUG [d0f00f59] 	Already installed ruby-2.6.6.
+To reinstall use:
+
+    rvm reinstall ruby-2.6.6
+
+  INFO [d0f00f59] Finished in 0.544 seconds with exit status 0 (successful).
+  INFO [44ea78b5] Running /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD as ubuntu@54.186.105.80
+ DEBUG [44ea78b5] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-85241e7a045257e61d10.sh" ; /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD )
+ DEBUG [44ea78b5] 	dbbf8aa83145d2faef300055911dcde5920c4039	HEAD
+  INFO [44ea78b5] Finished in 0.345 seconds with exit status 0 (successful).
+  INFO [a4515181] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases as ubuntu@54.186.105.80
+ DEBUG [a4515181] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases
+  INFO [a4515181] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [a77334e9] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets as ubuntu@54.186.105.80
+ DEBUG [a77334e9] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets
+  INFO [a77334e9] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [df2d254d] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config as ubuntu@54.186.105.80
+ DEBUG [df2d254d] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config
+  INFO [df2d254d] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [45e4a805] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [45e4a805] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ]
+ DEBUG [45e4a805] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [332bbe3a] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [332bbe3a] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ]
+ DEBUG [332bbe3a] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [73c3140f] Running [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ] as ubuntu@54.186.105.80
+ DEBUG [73c3140f] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ]
+ DEBUG [73c3140f] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [2af1724e] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430163627/REVISION ] as ubuntu@54.186.105.80
+ DEBUG [2af1724e] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430163627/REVISION ]
+ DEBUG [2af1724e] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [9fb91987] Running /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210430163627/REVISION 2>/dev/null as ubuntu@54.186.105.80
+ DEBUG [9fb91987] Command: /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210430163627/REVISION 2>/dev/null
+ DEBUG [9fb91987] 	dbbf8aa83145d2faef300055911dcde5920c4039
+ DEBUG [9fb91987] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [cfdb4681] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [cfdb4681] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi
+ DEBUG [cfdb4681] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [9a100e46] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true as ubuntu@54.186.105.80
+ DEBUG [9a100e46] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true
+  INFO [9a100e46] Finished in 0.992 seconds with exit status 0 (successful).
+  INFO [8b904043] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle as ubuntu@54.186.105.80
+ DEBUG [8b904043] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle
+  INFO [8b904043] Finished in 1.164 seconds with exit status 0 (successful).
+  INFO [9fe730c2] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production as ubuntu@54.186.105.80
+ DEBUG [9fe730c2] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production
+  INFO [9fe730c2] Finished in 0.993 seconds with exit status 0 (successful).
+ DEBUG [7e2639cb] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [7e2639cb] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi
+ DEBUG [7e2639cb] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [0b82b10e] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check as ubuntu@54.186.105.80
+ DEBUG [0b82b10e] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check
+ DEBUG [0b82b10e] 	The Gemfile's dependencies are satisfied
+ DEBUG [0b82b10e] Finished in 1.118 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [17047c5e] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [17047c5e] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi
+ DEBUG [17047c5e] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [4ff4302a] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile as ubuntu@54.186.105.80
+ DEBUG [4ff4302a] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && ( export RAILS_ENV="development" RAILS_GROUPS="" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile )
+ DEBUG [4ff4302a] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430163627/app/assets/stylesheets/application.scss:26669:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4ff4302a] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430163627/app/assets/stylesheets/application.scss:32533:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4ff4302a] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430163627/app/assets/stylesheets/application.scss:32546:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4ff4302a] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430163627/app/assets/stylesheets/essentials.scss:3616:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4ff4302a] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430163627/app/assets/stylesheets/essentials.scss:3629:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4ff4302a] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430163627/app/assets/stylesheets/settings.scss:1550:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [4ff4302a] 	I, [2021-04-30T16:37:40.915989 #964]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/application-26a9424274a0eb854c7653431077bcaf5cdc894b3e0bab477e0401bde1c9f4f8.css
+ DEBUG [4ff4302a] 	I, [2021-04-30T16:37:40.922388 #964]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/application-26a9424274a0eb854c7653431077bcaf5cdc894b3e0bab477e0401bde1c9f4f8.css.gz
+  INFO [4ff4302a] Finished in 62.516 seconds with exit status 0 (successful).
+ DEBUG [33787124] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [33787124] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi
+ DEBUG [33787124] Finished in 0.204 seconds with exit status 0 (successful).
+  INFO [a8b8c8d0] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163627/assets_manifest_backup as ubuntu@54.186.105.80
+ DEBUG [a8b8c8d0] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430163627/assets_manifest_backup
+  INFO [a8b8c8d0] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [914f50d1] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/.sprockets-manifest* as ubuntu@54.186.105.80
+ DEBUG [914f50d1] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/.sprockets-manifest*
+ DEBUG [914f50d1] 	/home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json
+ DEBUG [914f50d1] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG [55a5f7e0] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/.sprockets-manifest* as ubuntu@54.186.105.80
+ DEBUG [55a5f7e0] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/.sprockets-manifest*
+ DEBUG [55a5f7e0] 	/home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json
+ DEBUG [55a5f7e0] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [179cb96a] Running /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json /home/ubuntu/apps/DonNguyen/releases/20210430163627/assets_manifest_backup as ubuntu@54.186.105.80
+ DEBUG [179cb96a] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210430163627/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json /home/ubuntu/apps/DonNguyen/releases/20210430163627/assets_manifest_backup
+  INFO [179cb96a] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [a880bc2b] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [a880bc2b] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430163627; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430163627'" 1>&2; false; fi
+ DEBUG [a880bc2b] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [4268d87d] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate as ubuntu@54.186.105.80
+ DEBUG [4268d87d] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430163627 && ( export RAILS_ENV="development" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate )
+ DEBUG [4268d87d] 	rake aborted!
+ DEBUG [4268d87d] 	ActiveRecord::NoDatabaseError: Unknown database 'RailsApp_development'
+ DEBUG [4268d87d] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [4268d87d] 	
+Caused by:
+ DEBUG [4268d87d] 	Mysql2::Error: Unknown database 'RailsApp_development'
+ DEBUG [4268d87d] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `connect'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `initialize'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [4268d87d] 	Tasks: TOP => db:migrate
+ DEBUG [4268d87d] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-30 10:47:56 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [60d411f8] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@54.186.105.80
+ DEBUG [60d411f8] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [60d411f8] Finished in 2.161 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [2a1afbc7] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@54.186.105.80
+ DEBUG [2a1afbc7] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [2a1afbc7] Finished in 0.174 seconds with exit status 0 (successful).
+  INFO [844694af] Running /usr/bin/env mkdir -p /tmp as ubuntu@54.186.105.80
+ DEBUG [844694af] Command: /usr/bin/env mkdir -p /tmp
+  INFO [844694af] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-12d0a6e07b097d5d94b6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-12d0a6e07b097d5d94b6.sh 100.0%
+  INFO [e63b3f41] Running /usr/bin/env chmod 700 /tmp/git-ssh-12d0a6e07b097d5d94b6.sh as ubuntu@54.186.105.80
+ DEBUG [e63b3f41] Command: /usr/bin/env chmod 700 /tmp/git-ssh-12d0a6e07b097d5d94b6.sh
+  INFO [e63b3f41] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [6d462142] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@54.186.105.80
+ DEBUG [6d462142] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [6d462142] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/DonNguyen/repo
+ DEBUG [faddc45d] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [faddc45d] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [faddc45d] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [41f83983] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@54.186.105.80
+ DEBUG [41f83983] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-12d0a6e07b097d5d94b6.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [41f83983] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO [991d5fd0] Running /usr/bin/env git remote update --prune as ubuntu@54.186.105.80
+ DEBUG [991d5fd0] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-12d0a6e07b097d5d94b6.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [991d5fd0] 	Fetching origin
+  INFO [991d5fd0] Finished in 0.605 seconds with exit status 0 (successful).
+ DEBUG [05b2beb7] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [05b2beb7] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [05b2beb7] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [721e7d01] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430174759 as ubuntu@54.186.105.80
+ DEBUG [721e7d01] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-12d0a6e07b097d5d94b6.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430174759 )
+  INFO [721e7d01] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [4a4a4b47] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430174759 as ubuntu@54.186.105.80
+ DEBUG [4a4a4b47] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-12d0a6e07b097d5d94b6.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430174759 )
+  INFO [4a4a4b47] Finished in 1.494 seconds with exit status 0 (successful).
+ DEBUG [21e5cdfb] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [21e5cdfb] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [21e5cdfb] Finished in 0.161 seconds with exit status 0 (successful).
+ DEBUG [894fd268] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@54.186.105.80
+ DEBUG [894fd268] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-12d0a6e07b097d5d94b6.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [894fd268] 	dbbf8aa83145d2faef300055911dcde5920c4039
+ DEBUG [894fd268] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [f29358d9] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [f29358d9] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi
+ DEBUG [f29358d9] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [17f4b481] Running /usr/bin/env echo "dbbf8aa83145d2faef300055911dcde5920c4039" > REVISION as ubuntu@54.186.105.80
+ DEBUG [17f4b481] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /usr/bin/env echo "dbbf8aa83145d2faef300055911dcde5920c4039" > REVISION
+  INFO [17f4b481] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [9c07d839] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430174759/config as ubuntu@54.186.105.80
+ DEBUG [9c07d839] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430174759/config
+  INFO [9c07d839] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [60437f3d] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [60437f3d] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/database.yml ]
+ DEBUG [60437f3d] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [f196e76b] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [f196e76b] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/database.yml ]
+ DEBUG [f196e76b] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [f46add1f] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/database.yml as ubuntu@54.186.105.80
+ DEBUG [f46add1f] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/database.yml
+  INFO [f46add1f] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [722e700f] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/database.yml as ubuntu@54.186.105.80
+ DEBUG [722e700f] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/database.yml
+  INFO [722e700f] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [6c041365] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [6c041365] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/application.yml ]
+ DEBUG [6c041365] Finished in 0.152 seconds with exit status 1 (failed).
+ DEBUG [75f17147] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [75f17147] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/application.yml ]
+ DEBUG [75f17147] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [b7a1f2b5] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/application.yml as ubuntu@54.186.105.80
+ DEBUG [b7a1f2b5] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/application.yml
+  INFO [b7a1f2b5] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [5dccf7ca] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/application.yml as ubuntu@54.186.105.80
+ DEBUG [5dccf7ca] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210430174759/config/application.yml
+  INFO [5dccf7ca] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [cfb7d8fc] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp /home/ubuntu/apps/DonNguyen/releases/20210430174759 /home/ubuntu/apps/DonNguyen/releases/20210430174759/public as ubuntu@54.186.105.80
+ DEBUG [cfb7d8fc] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp /home/ubuntu/apps/DonNguyen/releases/20210430174759 /home/ubuntu/apps/DonNguyen/releases/20210430174759/public
+  INFO [cfb7d8fc] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [72582bc2] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/pids ] as ubuntu@54.186.105.80
+ DEBUG [72582bc2] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/pids ]
+ DEBUG [72582bc2] Finished in 0.149 seconds with exit status 1 (failed).
+ DEBUG [bd003c9d] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/pids ] as ubuntu@54.186.105.80
+ DEBUG [bd003c9d] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/pids ]
+ DEBUG [bd003c9d] Finished in 0.141 seconds with exit status 1 (failed).
+  INFO [20fbca94] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/pids as ubuntu@54.186.105.80
+ DEBUG [20fbca94] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/pids
+  INFO [20fbca94] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [944d4f4d] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/sockets ] as ubuntu@54.186.105.80
+ DEBUG [944d4f4d] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/sockets ]
+ DEBUG [944d4f4d] Finished in 0.146 seconds with exit status 1 (failed).
+ DEBUG [81e26aff] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/sockets ] as ubuntu@54.186.105.80
+ DEBUG [81e26aff] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/sockets ]
+ DEBUG [81e26aff] Finished in 0.145 seconds with exit status 1 (failed).
+  INFO [545c5038] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/sockets as ubuntu@54.186.105.80
+ DEBUG [545c5038] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210430174759/tmp/sockets
+  INFO [545c5038] Finished in 0.251 seconds with exit status 0 (successful).
+ DEBUG [adeb9dc0] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/log ] as ubuntu@54.186.105.80
+ DEBUG [adeb9dc0] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/log ]
+ DEBUG [adeb9dc0] Finished in 0.225 seconds with exit status 1 (failed).
+ DEBUG [64c0c5a1] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430174759/log ] as ubuntu@54.186.105.80
+ DEBUG [64c0c5a1] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430174759/log ]
+ DEBUG [64c0c5a1] Finished in 0.170 seconds with exit status 0 (successful).
+  INFO [eab00204] Running /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210430174759/log as ubuntu@54.186.105.80
+ DEBUG [eab00204] Command: /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210430174759/log
+  INFO [eab00204] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO [772460cd] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210430174759/log as ubuntu@54.186.105.80
+ DEBUG [772460cd] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210430174759/log
+  INFO [772460cd] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [eb8d395e] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets ] as ubuntu@54.186.105.80
+ DEBUG [eb8d395e] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets ]
+ DEBUG [eb8d395e] Finished in 0.179 seconds with exit status 1 (failed).
+ DEBUG [19cb203c] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets ] as ubuntu@54.186.105.80
+ DEBUG [19cb203c] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets ]
+ DEBUG [19cb203c] Finished in 0.174 seconds with exit status 1 (failed).
+  INFO [9ca39145] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets as ubuntu@54.186.105.80
+ DEBUG [9ca39145] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets
+  INFO [9ca39145] Finished in 0.166 seconds with exit status 0 (successful).
+ DEBUG [61c5a86d] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [61c5a86d] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi
+ DEBUG [61c5a86d] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [8307a1cf] Running /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install . as ubuntu@54.186.105.80
+ DEBUG [8307a1cf] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install .
+ DEBUG [8307a1cf] 	Already installed ruby-2.6.6.
+To reinstall use:
+
+    rvm reinstall ruby-2.6.6
+
+  INFO [8307a1cf] Finished in 0.693 seconds with exit status 0 (successful).
+  INFO [229fb9f3] Running /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD as ubuntu@54.186.105.80
+ DEBUG [229fb9f3] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-12d0a6e07b097d5d94b6.sh" ; /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD )
+ DEBUG [229fb9f3] 	dbbf8aa83145d2faef300055911dcde5920c4039	HEAD
+  INFO [229fb9f3] Finished in 0.368 seconds with exit status 0 (successful).
+  INFO [2729c160] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases as ubuntu@54.186.105.80
+ DEBUG [2729c160] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases
+  INFO [2729c160] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [9d1b7a9b] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets as ubuntu@54.186.105.80
+ DEBUG [9d1b7a9b] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets
+  INFO [9d1b7a9b] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [69c0569d] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config as ubuntu@54.186.105.80
+ DEBUG [69c0569d] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config
+  INFO [69c0569d] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [d137ffa7] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [d137ffa7] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ]
+ DEBUG [d137ffa7] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [c6185fdb] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [c6185fdb] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ]
+ DEBUG [c6185fdb] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [a3bf2552] Running [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ] as ubuntu@54.186.105.80
+ DEBUG [a3bf2552] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ]
+ DEBUG [a3bf2552] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [74f3983f] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430174759/REVISION ] as ubuntu@54.186.105.80
+ DEBUG [74f3983f] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430174759/REVISION ]
+ DEBUG [74f3983f] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [eab46aa4] Running /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210430174759/REVISION 2>/dev/null as ubuntu@54.186.105.80
+ DEBUG [eab46aa4] Command: /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210430174759/REVISION 2>/dev/null
+ DEBUG [eab46aa4] 	dbbf8aa83145d2faef300055911dcde5920c4039
+ DEBUG [eab46aa4] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [c20cdb7d] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [c20cdb7d] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi
+ DEBUG [c20cdb7d] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [1cbaad18] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true as ubuntu@54.186.105.80
+ DEBUG [1cbaad18] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true
+  INFO [1cbaad18] Finished in 0.990 seconds with exit status 0 (successful).
+  INFO [15a28609] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle as ubuntu@54.186.105.80
+ DEBUG [15a28609] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle
+  INFO [15a28609] Finished in 0.996 seconds with exit status 0 (successful).
+  INFO [7f5f363d] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production as ubuntu@54.186.105.80
+ DEBUG [7f5f363d] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production
+  INFO [7f5f363d] Finished in 0.983 seconds with exit status 0 (successful).
+ DEBUG [1eb81a05] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [1eb81a05] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi
+ DEBUG [1eb81a05] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [149d2846] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check as ubuntu@54.186.105.80
+ DEBUG [149d2846] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check
+ DEBUG [149d2846] 	The Gemfile's dependencies are satisfied
+ DEBUG [149d2846] Finished in 1.108 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [a1a2c718] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [a1a2c718] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi
+ DEBUG [a1a2c718] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [30a0565e] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile as ubuntu@54.186.105.80
+ DEBUG [30a0565e] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && ( export RAILS_ENV="development" RAILS_GROUPS="" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile )
+ DEBUG [30a0565e] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430174759/app/assets/stylesheets/application.scss:26669:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [30a0565e] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430174759/app/assets/stylesheets/application.scss:32533:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [30a0565e] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430174759/app/assets/stylesheets/application.scss:32546:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [30a0565e] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430174759/app/assets/stylesheets/essentials.scss:3616:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430174759/app/assets/stylesheets/essentials.scss:3629:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [30a0565e] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430174759/app/assets/stylesheets/settings.scss:1550:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [30a0565e] 	I, [2021-04-30T17:49:16.252375 #4527]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/application-6f13a8f9ff93ee2eab9297ba5d1602986ca6363847e8c5dce39f43e2b2a83e5e.css
+ DEBUG [30a0565e] 	I, [2021-04-30T17:49:16.252786 #4527]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/application-6f13a8f9ff93ee2eab9297ba5d1602986ca6363847e8c5dce39f43e2b2a83e5e.css.gz
+  INFO [30a0565e] Finished in 63.462 seconds with exit status 0 (successful).
+ DEBUG [f888f129] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [f888f129] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi
+ DEBUG [f888f129] Finished in 0.209 seconds with exit status 0 (successful).
+  INFO [272a3b2e] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430174759/assets_manifest_backup as ubuntu@54.186.105.80
+ DEBUG [272a3b2e] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430174759/assets_manifest_backup
+  INFO [272a3b2e] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [9579f54b] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/.sprockets-manifest* as ubuntu@54.186.105.80
+ DEBUG [9579f54b] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/.sprockets-manifest*
+ DEBUG [9579f54b] 	/home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json
+ DEBUG [9579f54b] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [0476c971] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/.sprockets-manifest* as ubuntu@54.186.105.80
+ DEBUG [0476c971] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/.sprockets-manifest*
+ DEBUG [0476c971] 	/home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json
+ DEBUG [0476c971] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [0936cfcc] Running /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json /home/ubuntu/apps/DonNguyen/releases/20210430174759/assets_manifest_backup as ubuntu@54.186.105.80
+ DEBUG [0936cfcc] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210430174759/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json /home/ubuntu/apps/DonNguyen/releases/20210430174759/assets_manifest_backup
+  INFO [0936cfcc] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [4b233178] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [4b233178] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430174759; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430174759'" 1>&2; false; fi
+ DEBUG [4b233178] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [22a25d29] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate as ubuntu@54.186.105.80
+ DEBUG [22a25d29] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430174759 && ( export RAILS_ENV="development" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate )
+ DEBUG [22a25d29] 	rake aborted!
+ DEBUG [22a25d29] 	ActiveRecord::NoDatabaseError: Unknown database 'RailsApp_development'
+ DEBUG [22a25d29] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [22a25d29] 	
+Caused by:
+ DEBUG [22a25d29] 	Mysql2::Error: Unknown database 'RailsApp_development'
+ DEBUG [22a25d29] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `connect'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `initialize'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [22a25d29] 	Tasks: TOP => db:migrate
+ DEBUG [22a25d29] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-04-30 11:13:50 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0971216c] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/ as ubuntu@54.186.105.80
+ DEBUG [0971216c] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/rvm1scripts/
+  INFO [0971216c] Finished in 1.656 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 0.0%
+  INFO Uploading /home/don/.rvm/gems/ruby-2.6.6/gems/rvm1-capistrano3-1.4.0/script/rvm-auto.sh 100.0%
+  INFO [0058ef33] Running /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh as ubuntu@54.186.105.80
+ DEBUG [0058ef33] Command: /usr/bin/env chmod +x /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh
+  INFO [0058ef33] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [820f98b8] Running /usr/bin/env mkdir -p /tmp as ubuntu@54.186.105.80
+ DEBUG [820f98b8] Command: /usr/bin/env mkdir -p /tmp
+  INFO [820f98b8] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-66a7487eaef345b66a1e.sh 0.0%
+  INFO Uploading /tmp/git-ssh-66a7487eaef345b66a1e.sh 100.0%
+  INFO [b311672d] Running /usr/bin/env chmod 700 /tmp/git-ssh-66a7487eaef345b66a1e.sh as ubuntu@54.186.105.80
+ DEBUG [b311672d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-66a7487eaef345b66a1e.sh
+  INFO [b311672d] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [0a96ecc9] Running [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ] as ubuntu@54.186.105.80
+ DEBUG [0a96ecc9] Command: [ -f /home/ubuntu/apps/DonNguyen/repo/HEAD ]
+ DEBUG [0a96ecc9] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/DonNguyen/repo
+ DEBUG [7fd93a22] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [7fd93a22] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [7fd93a22] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [a4807abe] Running /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git as ubuntu@54.186.105.80
+ DEBUG [a4807abe] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-66a7487eaef345b66a1e.sh" ; /usr/bin/env git remote set-url origin https://github.com/dondong1/Rocket-Elevator-Foundation.git )
+  INFO [a4807abe] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [134d4100] Running /usr/bin/env git remote update --prune as ubuntu@54.186.105.80
+ DEBUG [134d4100] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-66a7487eaef345b66a1e.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [134d4100] 	Fetching origin
+  INFO [134d4100] Finished in 0.556 seconds with exit status 0 (successful).
+ DEBUG [e6594c1f] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [e6594c1f] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [e6594c1f] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [172de446] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430181352 as ubuntu@54.186.105.80
+ DEBUG [172de446] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-66a7487eaef345b66a1e.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430181352 )
+  INFO [172de446] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [c680a676] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430181352 as ubuntu@54.186.105.80
+ DEBUG [c680a676] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-66a7487eaef345b66a1e.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/DonNguyen/releases/20210430181352 )
+  INFO [c680a676] Finished in 1.431 seconds with exit status 0 (successful).
+ DEBUG [159fe0ea] Running if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [159fe0ea] Command: if test ! -d /home/ubuntu/apps/DonNguyen/repo; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/repo'" 1>&2; false; fi
+ DEBUG [159fe0ea] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [4851102c] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@54.186.105.80
+ DEBUG [4851102c] Command: cd /home/ubuntu/apps/DonNguyen/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-66a7487eaef345b66a1e.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [4851102c] 	dbbf8aa83145d2faef300055911dcde5920c4039
+ DEBUG [4851102c] Finished in 0.165 seconds with exit status 0 (successful).
+ DEBUG [b11b60ed] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [b11b60ed] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi
+ DEBUG [b11b60ed] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [eaa18293] Running /usr/bin/env echo "dbbf8aa83145d2faef300055911dcde5920c4039" > REVISION as ubuntu@54.186.105.80
+ DEBUG [eaa18293] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /usr/bin/env echo "dbbf8aa83145d2faef300055911dcde5920c4039" > REVISION
+  INFO [eaa18293] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [d285c8bf] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430181352/config as ubuntu@54.186.105.80
+ DEBUG [d285c8bf] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430181352/config
+  INFO [d285c8bf] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [33690b5b] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [33690b5b] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/database.yml ]
+ DEBUG [33690b5b] Finished in 0.143 seconds with exit status 1 (failed).
+ DEBUG [ebc0879c] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [ebc0879c] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/database.yml ]
+ DEBUG [ebc0879c] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [12b1335a] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/database.yml as ubuntu@54.186.105.80
+ DEBUG [12b1335a] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/database.yml
+  INFO [12b1335a] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [ffa60c32] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/database.yml as ubuntu@54.186.105.80
+ DEBUG [ffa60c32] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/database.yml /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/database.yml
+  INFO [ffa60c32] Finished in 0.078 seconds with exit status 0 (successful).
+ DEBUG [a481739e] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [a481739e] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/application.yml ]
+ DEBUG [a481739e] Finished in 0.146 seconds with exit status 1 (failed).
+ DEBUG [38242e16] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [38242e16] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/application.yml ]
+ DEBUG [38242e16] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [7a2293f1] Running /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/application.yml as ubuntu@54.186.105.80
+ DEBUG [7a2293f1] Command: /usr/bin/env rm /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/application.yml
+  INFO [7a2293f1] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [4738e26d] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/application.yml as ubuntu@54.186.105.80
+ DEBUG [4738e26d] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/config/application.yml /home/ubuntu/apps/DonNguyen/releases/20210430181352/config/application.yml
+  INFO [4738e26d] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [8a3f970f] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp /home/ubuntu/apps/DonNguyen/releases/20210430181352 /home/ubuntu/apps/DonNguyen/releases/20210430181352/public as ubuntu@54.186.105.80
+ DEBUG [8a3f970f] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp /home/ubuntu/apps/DonNguyen/releases/20210430181352 /home/ubuntu/apps/DonNguyen/releases/20210430181352/public
+  INFO [8a3f970f] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [1b21a4b4] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/pids ] as ubuntu@54.186.105.80
+ DEBUG [1b21a4b4] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/pids ]
+ DEBUG [1b21a4b4] Finished in 0.140 seconds with exit status 1 (failed).
+ DEBUG [117a90ad] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/pids ] as ubuntu@54.186.105.80
+ DEBUG [117a90ad] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/pids ]
+ DEBUG [117a90ad] Finished in 0.152 seconds with exit status 1 (failed).
+  INFO [4120eec9] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/pids as ubuntu@54.186.105.80
+ DEBUG [4120eec9] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/pids
+  INFO [4120eec9] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [ea30a268] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/sockets ] as ubuntu@54.186.105.80
+ DEBUG [ea30a268] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/sockets ]
+ DEBUG [ea30a268] Finished in 0.128 seconds with exit status 1 (failed).
+ DEBUG [b9dee327] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/sockets ] as ubuntu@54.186.105.80
+ DEBUG [b9dee327] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/sockets ]
+ DEBUG [b9dee327] Finished in 0.097 seconds with exit status 1 (failed).
+  INFO [7e43502b] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/sockets as ubuntu@54.186.105.80
+ DEBUG [7e43502b] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/releases/20210430181352/tmp/sockets
+  INFO [7e43502b] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [86937117] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/log ] as ubuntu@54.186.105.80
+ DEBUG [86937117] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/log ]
+ DEBUG [86937117] Finished in 0.132 seconds with exit status 1 (failed).
+ DEBUG [a444f3d8] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430181352/log ] as ubuntu@54.186.105.80
+ DEBUG [a444f3d8] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430181352/log ]
+ DEBUG [a444f3d8] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [6daff00a] Running /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210430181352/log as ubuntu@54.186.105.80
+ DEBUG [6daff00a] Command: /usr/bin/env rm -rf /home/ubuntu/apps/DonNguyen/releases/20210430181352/log
+  INFO [6daff00a] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [19a7bc87] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210430181352/log as ubuntu@54.186.105.80
+ DEBUG [19a7bc87] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/releases/20210430181352/log
+  INFO [19a7bc87] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [c53860b1] Running [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets ] as ubuntu@54.186.105.80
+ DEBUG [c53860b1] Command: [ -L /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets ]
+ DEBUG [c53860b1] Finished in 0.114 seconds with exit status 1 (failed).
+ DEBUG [d93990f1] Running [ -d /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets ] as ubuntu@54.186.105.80
+ DEBUG [d93990f1] Command: [ -d /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets ]
+ DEBUG [d93990f1] Finished in 0.152 seconds with exit status 1 (failed).
+  INFO [5f89bf45] Running /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets as ubuntu@54.186.105.80
+ DEBUG [5f89bf45] Command: /usr/bin/env ln -s /home/ubuntu/apps/DonNguyen/shared/public/assets /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets
+  INFO [5f89bf45] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [3d5e029d] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [3d5e029d] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi
+ DEBUG [3d5e029d] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [1be820d8] Running /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install . as ubuntu@54.186.105.80
+ DEBUG [1be820d8] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /usr/bin/env /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh rvm --install install .
+ DEBUG [1be820d8] 	Already installed ruby-2.6.6.
+To reinstall use:
+
+    rvm reinstall ruby-2.6.6
+
+  INFO [1be820d8] Finished in 0.595 seconds with exit status 0 (successful).
+  INFO [0551d519] Running /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD as ubuntu@54.186.105.80
+ DEBUG [0551d519] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-66a7487eaef345b66a1e.sh" ; /usr/bin/env git ls-remote https://github.com/dondong1/Rocket-Elevator-Foundation.git HEAD )
+ DEBUG [0551d519] 	dbbf8aa83145d2faef300055911dcde5920c4039	HEAD
+  INFO [0551d519] Finished in 0.440 seconds with exit status 0 (successful).
+  INFO [a2487d0d] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases as ubuntu@54.186.105.80
+ DEBUG [a2487d0d] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared /home/ubuntu/apps/DonNguyen/releases
+  INFO [a2487d0d] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [54da4b02] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets as ubuntu@54.186.105.80
+ DEBUG [54da4b02] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/tmp/pids /home/ubuntu/apps/DonNguyen/shared/tmp/sockets /home/ubuntu/apps/DonNguyen/shared/log /home/ubuntu/apps/DonNguyen/shared/public/assets
+  INFO [54da4b02] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [49826dd1] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config as ubuntu@54.186.105.80
+ DEBUG [49826dd1] Command: /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/shared/config
+  INFO [49826dd1] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [0d71d40a] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ] as ubuntu@54.186.105.80
+ DEBUG [0d71d40a] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/database.yml ]
+ DEBUG [0d71d40a] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [5f6d0a1c] Running [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ] as ubuntu@54.186.105.80
+ DEBUG [5f6d0a1c] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/config/application.yml ]
+ DEBUG [5f6d0a1c] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [5ab5a434] Running [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ] as ubuntu@54.186.105.80
+ DEBUG [5ab5a434] Command: [ -f /home/ubuntu/apps/DonNguyen/shared/puma.rb ]
+ DEBUG [5ab5a434] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [58ad32bc] Running [ -f /home/ubuntu/apps/DonNguyen/releases/20210430181352/REVISION ] as ubuntu@54.186.105.80
+ DEBUG [58ad32bc] Command: [ -f /home/ubuntu/apps/DonNguyen/releases/20210430181352/REVISION ]
+ DEBUG [58ad32bc] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [19823972] Running /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210430181352/REVISION 2>/dev/null as ubuntu@54.186.105.80
+ DEBUG [19823972] Command: /usr/bin/env cat /home/ubuntu/apps/DonNguyen/releases/20210430181352/REVISION 2>/dev/null
+ DEBUG [19823972] 	dbbf8aa83145d2faef300055911dcde5920c4039
+ DEBUG [19823972] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [442bea3d] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [442bea3d] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi
+ DEBUG [442bea3d] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [8333c0c5] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true as ubuntu@54.186.105.80
+ DEBUG [8333c0c5] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local deployment true
+  INFO [8333c0c5] Finished in 0.976 seconds with exit status 0 (successful).
+  INFO [63edde4f] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle as ubuntu@54.186.105.80
+ DEBUG [63edde4f] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local path /home/ubuntu/apps/DonNguyen/shared/bundle
+  INFO [63edde4f] Finished in 0.985 seconds with exit status 0 (successful).
+  INFO [2379151f] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production as ubuntu@54.186.105.80
+ DEBUG [2379151f] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle config --local without production
+  INFO [2379151f] Finished in 1.004 seconds with exit status 0 (successful).
+ DEBUG [83d835f6] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [83d835f6] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi
+ DEBUG [83d835f6] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [e6e27827] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check as ubuntu@54.186.105.80
+ DEBUG [e6e27827] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle check
+ DEBUG [e6e27827] 	The Gemfile's dependencies are satisfied
+ DEBUG [e6e27827] Finished in 1.127 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [309b5d32] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [309b5d32] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi
+ DEBUG [309b5d32] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [3b03d879] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile as ubuntu@54.186.105.80
+ DEBUG [3b03d879] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && ( export RAILS_ENV="development" RAILS_GROUPS="" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake assets:precompile )
+ DEBUG [3b03d879] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430181352/app/assets/stylesheets/application.scss:26669:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [3b03d879] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430181352/app/assets/stylesheets/application.scss:32533:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [3b03d879] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430181352/app/assets/stylesheets/application.scss:32546:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [3b03d879] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430181352/app/assets/stylesheets/essentials.scss:3616:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [3b03d879] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430181352/app/assets/stylesheets/essentials.scss:3629:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [3b03d879] 	autoprefixer: /home/ubuntu/apps/DonNguyen/releases/20210430181352/app/assets/stylesheets/settings.scss:1550:3: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+ DEBUG [3b03d879] 	I, [2021-04-30T18:15:09.091133 #7928]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/application-d78a32c4f2fc132eb3c63270ac7784c9c8ffb0bf3218c7aa99bd42b4fc14c3a0.css
+ DEBUG [3b03d879] 	I, [2021-04-30T18:15:09.091568 #7928]  INFO -- : Writing /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/application-d78a32c4f2fc132eb3c63270ac7784c9c8ffb0bf3218c7aa99bd42b4fc14c3a0.css.gz
+  INFO [3b03d879] Finished in 62.412 seconds with exit status 0 (successful).
+ DEBUG [bab636c8] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [bab636c8] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi
+ DEBUG [bab636c8] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [903cc215] Running /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430181352/assets_manifest_backup as ubuntu@54.186.105.80
+ DEBUG [903cc215] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /usr/bin/env mkdir -p /home/ubuntu/apps/DonNguyen/releases/20210430181352/assets_manifest_backup
+  INFO [903cc215] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [a57210ed] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/.sprockets-manifest* as ubuntu@54.186.105.80
+ DEBUG [a57210ed] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/.sprockets-manifest*
+ DEBUG [a57210ed] 	/home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json
+ DEBUG [a57210ed] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [1a892a79] Running /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/.sprockets-manifest* as ubuntu@54.186.105.80
+ DEBUG [1a892a79] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /usr/bin/env ls /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/.sprockets-manifest*
+ DEBUG [1a892a79] 	/home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json
+ DEBUG [1a892a79] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [80755c76] Running /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json /home/ubuntu/apps/DonNguyen/releases/20210430181352/assets_manifest_backup as ubuntu@54.186.105.80
+ DEBUG [80755c76] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && /usr/bin/env cp /home/ubuntu/apps/DonNguyen/releases/20210430181352/public/assets/.sprockets-manifest-48f5126664617cbfa58d9315ad3d9fc8.json /home/ubuntu/apps/DonNguyen/releases/20210430181352/assets_manifest_backup
+  INFO [80755c76] Finished in 0.163 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [63953f29] Running if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi as ubuntu@54.186.105.80
+ DEBUG [63953f29] Command: if test ! -d /home/ubuntu/apps/DonNguyen/releases/20210430181352; then echo "Directory does not exist '/home/ubuntu/apps/DonNguyen/releases/20210430181352'" 1>&2; false; fi
+ DEBUG [63953f29] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [0889d1b0] Running /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate as ubuntu@54.186.105.80
+ DEBUG [0889d1b0] Command: cd /home/ubuntu/apps/DonNguyen/releases/20210430181352 && ( export RAILS_ENV="development" ; /home/ubuntu/apps/DonNguyen/rvm1scripts/rvm-auto.sh . bundle exec rake db:migrate )
+ DEBUG [0889d1b0] 	rake aborted!
+ DEBUG [0889d1b0] 	ActiveRecord::NoDatabaseError: Unknown database 'donnguyen'
+ DEBUG [0889d1b0] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [0889d1b0] 	
+Caused by:
+ DEBUG [0889d1b0] 	Mysql2::Error: Unknown database 'donnguyen'
+ DEBUG [0889d1b0] 	/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `connect'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/lib/mysql2/client.rb:90:in `initialize'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/connection_handling.rb:90:in `connection'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/tasks/database_tasks.rb:172:in `migrate'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/activerecord-5.2.4.5/lib/active_record/railties/databases.rake:60:in `block (2 levels) in <main>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/gems/rake-13.0.3/exe/rake:27:in `<top (required)>'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/apps/DonNguyen/shared/bundle/ruby/2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [0889d1b0] 	Tasks: TOP => db:migrate
+ DEBUG [0889d1b0] 	(See full trace by running task with --trace)
