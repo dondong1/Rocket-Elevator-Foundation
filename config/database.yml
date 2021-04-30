@@ -16,6 +16,7 @@ default: &postgresql
   username: dbmasteruser
   password: hellolove
   host: postgresql.czfqm6fbqz9o.us-west-1.rds.amazonaws.com
+  port: 5432
 
 warehouse_development:
   <<: *postgresql
