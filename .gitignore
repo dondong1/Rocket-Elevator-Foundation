@@ -28,6 +28,7 @@
 
 # Ignore application configuration
 /config/application.yml
+/config/newrelic.yml
 
 # Ignore database.yml file
 /config/database.yml
